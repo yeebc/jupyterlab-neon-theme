@@ -1,0 +1,316 @@
+/* Fix layout color */
+body, .cm-s-jupyter .CodeMirror-activeline-background,
+ .cm-s-jupyter .CodeMirror-gutter, .p-DockPanel-tabBar .p-TabBar-tab,
+ .p-DockPanel-tabBar .p-TabBar-tab.p-mod-current, 
+ .p-DockPanel-tabBar .p-TabBar-tab:hover:not(.p-mod-current) {
+   background-color: var(--jp-layout-color0);
+ }
+
+.p-DockPanel-tabBar {
+   background-color: var(--jp-layout-color1);
+ }
+
+ .f17wptjy {
+   background-color: #181818;
+  }
+
+ .jp-SideBar.p-TabBar, .jp-SideBar .p-TabBar-tab {
+   background-color: var(--jp-layout-color1) !important;
+ }
+
+/* Do some nice things with brackets */
+div.CodeMirror span.CodeMirror-matchingbracket {
+  color: var(--neon-night-green);
+  border-bottom: 1px solid var(--neon-night-green);
+  line-height: 1;
+}
+
+div.CodeMirror span.CodeMirror-nonmatchingbracket {
+  color: var(--horizon-red);
+  border-bottom: 1px solid var(--horizon-dark-red-1);
+  line-height: 0.55;
+}
+
+/*Flat and mordern scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#9d8bca50;
+  border-radius: 10px;
+  min-height: 100px;
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover, ::-webkit-scrollbar-thumb:horizontal:active {
+  background:  linear-gradient(to right, #fafc32, #f45959, #ef1eaf);
+}
+
+::-webkit-scrollbar-thumb:vertical:hover, ::-webkit-scrollbar-thumb:vertical:active {
+  background:  linear-gradient(to bottom, #fafc32, #f45959, #ef1eaf);
+}
+
+/*Fix cursor of horizontal  scrollbar*/
+.CodeMirror-hscrollbar {
+  cursor: auto;
+}
+
+/* Fix notebook style */
+.cm-s-jupyter span.cm-keyword {
+  font-weight: normal;
+}
+
+.cm-s-jupyter span.cm-variable-2 {
+  font-weight: bold;
+}
+
+.jp-InputArea-editor {
+  padding: 3px var(--jp-code-padding);
+} 
+
+.jp-Notebook {
+  padding: 10px 56px 10px 0;
+}
+
+.jp-OutputArea-child .jp-OutputArea-output {
+  padding: var(--jp-code-padding);
+}
+
+.jp-OutputArea-child .jp-RenderedImage.jp-OutputArea-output{
+  text-align: center;
+}
+
+.jp-OutputArea-child .jp-OutputArea-output {
+  margin-bottom: 3px;
+  background-color: var(--neon-night-bg1);
+  border-radius: 5px;
+}
+
+.jp-Cell {
+  padding: 3px  var(--jp-cell-padding);
+}
+
+/* Notebook prompt */
+.jp-OutputPrompt, .jp-Notebook .jp-Cell .jp-InputPrompt {
+  font-family: 'Vibur';
+  padding-right: 0;
+}
+
+ .jp-Notebook .jp-Cell .jp-InputPrompt {
+  color: var(--neon-night-cyan);
+  text-shadow: var(--neon-night-text-shadow0);
+  padding-top: 10px;  /* Works well with 14px code size */
+}
+
+.jp-Notebook .jp-Cell .jp-OutputPrompt {
+  color: #ffc8e0;
+  text-shadow: var(--neon-night-text-shadow1);
+  padding-top: 8px;  /* Works well with 14px code size */
+}
+
+.jp-Notebook .jp-Cell:not(.jp-mod-active) .jp-InputPrompt, 
+.jp-Notebook .jp-Cell:not(.jp-mod-active) .jp-OutputPrompt {
+  text-shadow: none;
+}
+
+/* Notebook collapser */
+.jp-Notebook .jp-Cell .jp-Collapser:hover {
+  box-shadow: none;
+}
+
+.jp-Notebook .jp-Cell .jp-Collapser {
+  opacity: 0;
+}
+
+/* Neon off*/
+.jp-Notebook .jp-Cell.jp-mod-active .jp-InputCollapser.jp-Cell-inputCollapser, 
+.jp-InputCollapser.jp-Cell-inputCollapser.jp-Collapser, 
+.jp-InputCollapser.jp-Cell-inputCollapser.jp-Collapser:hover{
+  background: var(--neon-night-blue);
+}
+
+.jp-Notebook .jp-Cell.jp-mod-active .jp-OutputCollapser.jp-Cell-outputCollapser,
+.jp-OutputCollapser.jp-Cell-outputCollapser.jp-Collapser, 
+.jp-OutputCollapser.jp-Cell-outputCollapser.jp-Collapser:hover{
+  background: var(--neon-night-peach1);
+}
+
+.jp-Notebook .jp-Cell.jp-mod-active .jp-InputCollapser.jp-Cell-inputCollapser,
+.jp-Notebook .jp-Cell.jp-mod-active .jp-OutputCollapser.jp-Cell-outputCollapser {
+  transition: box-shadow cubic-bezier(0, 0.2, 0, 0.2) 0.5s, background cubic-bezier(0, 0.2, 0, 0.2) 0.5s;
+  opacity: 1;
+}
+
+/* Neon on*/
+.jp-Notebook .jp-Cell.jp-mod-active .jp-InputCollapser.jp-Cell-inputCollapser:hover {
+  background: var(--neon-night-cyan);
+  box-shadow: 2px 2px 1px, 0 0 15px #0225ff, 0 0 5px 0.1px #0225ff, inset 0 0 1px 0.2px #0225ff;
+}
+
+.jp-Notebook .jp-Cell.jp-mod-active .jp-OutputCollapser.jp-Cell-outputCollapser:hover {
+  background: #ffc8e0;
+  box-shadow: 
+  2px 2px 1px, 0 0 15px #c10165, 0 0 5px 0.1px #c10165, inset 0 0 1px 0.2px #c10165;
+}
+
+/* Top, side, bottom bar */
+.jp-FileBrowser {
+  color: var(--jp-ui-font-color2);
+}
+
+#jp-top-panel {
+  border-bottom: 1px solid #000;
+}
+
+.jp-SideBar .p-TabBar-tab:not(.p-mod-current) .jp-icon3[fill] {
+  fill: var(--jp-inverse-layout-color4);
+}
+
+.jp-SideBar .p-TabBar-tab.p-mod-current .jp-icon3[fill]{
+  fill: var(--jp-inverse-layout-color2);
+}
+
+#jp-bottom-panel .f1235lqo {
+  color: var(--jp-ui-font-color2);
+}
+
+.jp-SideBar .p-TabBar-tab:hover:not(.p-mod-current) .jp-icon3[fill]{
+  fill: var(--jp-inverse-layout-color2);
+}
+
+/* Line numbers */
+.CodeMirror-gutters {
+  border-right: none;
+}
+
+.CodeMirror-linenumber {
+  color: var(--jp-ui-font-color3);
+  padding: 0 24px 0 16px;
+}
+
+.jp-Notebook  .CodeMirror-linenumber{
+  padding: 0 20px 0 8px;
+}
+
+/* Notebook tab bar */
+.p-DockPanel-tabBar {
+  color:  var(--jp-ui-font-color2);
+}
+
+.p-DockPanel-tabBar .p-TabBar-tab.jp-mod-current:before {
+  top: auto;
+  bottom: calc(-1 * var(--jp-border-width));
+  height: 2px;
+  background: linear-gradient(to right,
+  #00000000, #7334cb, #f36f8f, #ac7453, #00000000);
+} 
+
+#jp-main-dock-panel {
+  padding: 0;
+}
+
+.p-DockPanel-tabBar .p-TabBar-tab.p-mod-closable > .p-TabBar-tabCloseIcon {
+  padding-top: 16px;
+}
+
+.jp-Toolbar {
+  padding: 0;
+}
+
+.jp-NotebookPanel-toolbar {
+  padding-top: 2px;
+}
+
+.p-DockPanel-tabBar .p-TabBar-tabLabel {
+  font-size: 14px;
+  font-family: 'Neon Bugler';
+  transition: text-shadow cubic-bezier(0, 0.2, 0, 0.2) 0.2s, color cubic-bezier(0, 0.2, 0, 0.2) 0.2s;
+}
+
+.p-DockPanel-tabBar .p-TabBar-tab:hover:not(.p-mod-current), 
+.p-DockPanel-tabBar .p-TabBar-tab.p-mod-current {
+  color: #ffeef6;
+  text-shadow: 0 0 2px #cb1c75, 0 0 8px #8e1d57, 0 0 8px #8e1d57, 3px 3px 1px #000;
+}
+
+/* Search panel */
+.jp-DocumentSearch-overlay {
+  margin: 16px 16px 0 0;
+}
+
+.jp-DocumentSearch-overlay, .jp-DocumentSearch-overlay-row:first-of-type {
+  border: 1.5px solid #eb244f;
+  box-shadow: 0 0 5px 0 #951430, 0 0 10px 0px #951430, inset 0 0 5px 1px #951430;
+}
+
+.jp-DocumentSearch-overlay-row {
+  margin-bottom: 0;
+}
+
+.jp-DocumentSearch-overlay * {
+  font-family: 'Neon Bugler';
+  font-size: 15px;
+}
+
+.jp-DocumentSearch-overlay-row:first-of-type {
+  padding: 2px;
+}
+
+.jp-DocumentSearch-input {
+  color: var(--neon-night-green);
+  text-shadow: 0 0 5px #23854e, 0 0 5px #23854e, 0 0 2px #23854e;
+}
+
+.jp-DocumentSearch-index-counter {
+  font-size: 14px;
+  color: #ffa666;
+  text-shadow: 0 0 5px #854c23, 0 0 5px #854c23, 0 0 2px #854c23;
+}
+
+/*Rendered text*/
+.jp-RenderedText pre .ansi-red-fg {
+  color: var(--neon-night-red);
+}
+
+.jp-RenderedText pre .ansi-blue-fg {
+  color: var(--neon-night-purple1);
+}
+
+.jp-RenderedText pre .ansi-green-fg {
+  color: var(--neon-night-green);
+}
+
+.jp-RenderedText pre .ansi-green-intense-fg {
+  color: var(--neon-night-peach0);
+}
+
+.jp-RenderedText pre .ansi-cyan-fg {
+  color: var(--neon-night-cyan);
+}
+
+.jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon:before {
+  color: var(--neon-night-green);
+}
+
+.cm-s-jupyter span.cm-def {
+  transition: text-shadow cubic-bezier(0, 0.2, 0, 0.2) 0.2s;
+}
+
+.cm-s-jupyter span.cm-def:hover {
+  text-shadow: var(--neon-night-text-shadow0);
+}
+
+/* Let's lit neon in the presentation mode~ */
+.jp-mod-presentationMode .jp-Notebook .cm-s-jupyter span.cm-def {
+  text-shadow: var(--neon-night-text-shadow0);
+  font-family: 'Neon Bugler';
+  font-size: 17px;
+}
