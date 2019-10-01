@@ -26,33 +26,28 @@ all of MD as it is not optimized for dense, information rich UIs.
 
 :root {
   /* Basic color scheme*/
-   --neon-night-red: #fe4450;
-   --neon-night-blue: #00bbff;
-   --neon-night-yellow: #e2cd46;
+   --neon-night-red: #ff4954;
+   --neon-night-blue: #00c9ff;
+   --neon-night-yellow: #f9e24c;
    --neon-night-green:#00ff80;
    --neon-night-cyan:#36f9f6;
-   /* --neon-night-cyan:#8be9fd; */
-   --neon-night-peach0: #ff509b;
+   --neon-night-peach0: #ff549d;
    --neon-night-peach1: #cb4d8e;
-   --neon-night-pink: #f97e72;
-   --neon-night-purple0:#e633db;
-   /* --neon-night-purple0:#ff7edb; */
-   --neon-night-purple1:#8d99ff;
+   --neon-night-pink: #f98478;
+   --neon-night-purple0:#ef38e3;
+   --neon-night-purple1:#929dfd;
    --neon-night-purple2:#DF81FC;
    --neon-night-purple3:#7b5ccc;
-   /* --neon-night-purple:#880088; */
    --neon-night-orange:#ff8b39;
-   --neon-night-fg0:#bbb;
-   --neon-night-bg0: #201f2e;
-   --neon-night-bg1: #302640;
-   /* --neon-night-bg0: #161C23; */
-   /* --neon-night-bg0: #121622; */
+   --neon-night-fg0:#bfbfbf;
+   --neon-night-bg0: #262537;
+   --neon-night-bg1: #302a46;
    --neon-night-bg2: hsl(250, 20%, 25%);
 
-   --neon-night-text-shadow0: 0 0 3px #0225ff, 0 0 10px #0225ff, 0 0 10px #0225ff, 3px 3px 1px #000;
-   --neon-night-text-shadow1: 0 0 3px #c10165, 0 0 10px #c10165, 0 0 10px #c10165, 3px 3px 1px #000;
+   --neon-night-text-shadow0: 0 0 3px #0225ff, 0 0 10px #0225ff, 0 0 10px #0225ff, 2px 2px 1px #000;
+   --neon-night-text-shadow1: 0 0 3px #c10165, 0 0 10px #c10165, 0 0 10px #c10165, 2px 2px 1px #000;
 
-   --jp-private-horizontal-tab-height: 32px;
+   --jp-private-horizontal-tab-height: 28px;
 
   /* Elevation
    *
@@ -226,7 +221,7 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-layout-color0: var(--neon-night-bg0);
-  --jp-layout-color1: #1c1b2d;
+  --jp-layout-color1: #222136;
   --jp-layout-color2: var(--neon-night-bg2);
   --jp-layout-color3: var(--neon-night-bg2);
   --jp-layout-color4: var(--neon-night-peach1);
@@ -289,7 +284,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-editor-background: var(--neon-night-bg0);
   --jp-cell-editor-border-color: var(--md-grey-300);
   --jp-cell-editor-box-shadow: inset 0 0 2px var(--md-blue-300);
-  --jp-cell-editor-active-background: var(--jp-layout-color0);
+  --jp-cell-editor-active-background: var(--neon-night-bg0);
   --jp-cell-editor-active-border-color: var(--jp-brand-color2);
 
   --jp-cell-prompt-width: 56px;
@@ -347,10 +342,10 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Input field styles */
 
-  --jp-input-box-shadow: inset 0px -1px 0 0px #cb4d8e50, inset 0px 1px 0 0px #0bb6f450;
-  --jp-input-active-background: var(--jp-layout-color0);
-  --jp-input-hover-background: var(--jp-layout-color2);
-  --jp-input-background: var(--md-grey-800);
+  --jp-input-box-shadow: inset 0px -1px 0 0px #7b5ccc50, inset 0px 1px 0 0px #7b5ccc50;
+  --jp-input-active-background: var(--neon-night-bg1);
+  --jp-input-hover-background: var(--neon-night-bg1);
+  --jp-input-background: var(--neon-night-bg1);
   --jp-input-border-color: var(--jp-border-color1);
   --jp-input-active-border-color: var(--jp-brand-color1);
   --jp-input-active-box-shadow-color: inset 0px -1px 0 0px #f54bd2a8, inset 0px 1px 0 0px #02d4ff80;

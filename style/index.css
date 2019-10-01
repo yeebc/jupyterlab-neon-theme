@@ -6,6 +6,7 @@
 @import './variables.css';
 @import './urls.css';
 @import './fonts.css';
+@import './style.css';
 @import './custom.css';
 
 /* Set the default typography for monospace elements */
