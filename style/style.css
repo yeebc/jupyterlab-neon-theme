@@ -6,10 +6,13 @@
    background-color: var(--jp-layout-color0);
  }
 
- body, .p-DockPanel-tabBar, #jp-main-dock-panel, .p-Menu, .jp-Tooltip, 
- .p-MenuBar.p-mod-active .p-MenuBar-item.p-mod-active, 
- .p-MenuBar-item.p-mod-active {
+ body, .p-DockPanel-tabBar, #jp-main-dock-panel, .p-Menu, .jp-Tooltip{
    background-color: var(--jp-layout-color1);
+ }
+
+ .p-MenuBar-item.p-mod-active, 
+ .p-MenuBar.p-mod-active .p-MenuBar-item.p-mod-active {
+  background-color: #5d5b7b54;
  }
 
  #jp-main-dock-panel {
@@ -112,7 +115,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 .jp-Cell {
-  padding: 3px  var(--jp-cell-padding);
+  padding: 3px var(--jp-cell-padding);
 }
 
 /* Notebook prompt */
@@ -257,11 +260,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 .jp-Toolbar {
-  padding: 0;
-}
-
-.jp-NotebookPanel-toolbar {
-  padding-top: 2px;
+  padding: 2px 0;
 }
 
 .p-DockPanel-tabBar .p-TabBar-tab:hover:not(.p-mod-current), 
@@ -327,4 +326,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 
 .jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon:before {
   color: var(--neon-night-green);
+}
+
+.jp-extensionmanager-buildprompt {
+  color: var(--jp-ui-font-color1);
 }

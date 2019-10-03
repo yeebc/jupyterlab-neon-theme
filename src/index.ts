@@ -6,7 +6,7 @@ import {
 import { IThemeManager } from '@jupyterlab/apputils';
 
 /**
- * A plugin for @yeebc/jupyterlab_neon_theme
+ * A flat, 80's neon inspired theme for JupyterLab.
  */
 const plugin: JupyterFrontEndPlugin<void> = {
   id: '@yeebc/jupyterlab_neon_theme:plugin',
