@@ -1,6 +1,6 @@
 # Jupyterlab Neon Theme
 
-An 80's neon style theme for JupyterLab.
+A flat, 80's neon inspired theme for JupyterLab.
 
 <img src="https://raw.githubusercontent.com/yeebc/jupyterlab-neon-theme/master/screenshot/Neon Night.png" />
 <img src="https://raw.githubusercontent.com/yeebc/jupyterlab-neon-theme/master/screenshot/Neon Sunset.png" />
@@ -20,7 +20,7 @@ You may don't like the default background or the transparent UI, so codes of the
 PLease follow the comments to ajust the transparency.
 
 ### 2. Background
-Two gradients background, 'Neon Night' and 'Neon Sunset', are provide. The default style is 'Neon Night' and you can uncomment codes to employ 'Neon Sunset' style.
+Two gradient backgrounds, 'Neon Night' and 'Neon Sunset', are provide. The default style is 'Neon Night' and you can uncomment codes to employ 'Neon Sunset' style.
 
 To use an images as background, uncomment the relative part of codes, and change the url to the path of your image.
 
@@ -30,7 +30,7 @@ To change fonts of editor and neon, firstly, add your font files to [`fonts`](ht
 
 ## Prerequisites
 
-* JupyterLab
+* JupyterLab >= 1.0.0
 
 ## Installation
 

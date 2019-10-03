@@ -27,7 +27,8 @@ all of MD as it is not optimized for dense, information rich UIs.
 :root {
   /* Basic color scheme*/
    --neon-night-red: #ff4954;
-   --neon-night-blue: #00c9ff;
+   --neon-night-blue0: #00c9ff;
+   --neon-night-blue1: #008bce;
    --neon-night-yellow: #f9e24c;
    --neon-night-green:#00ff80;
    --neon-night-cyan:#36f9f6;
@@ -373,13 +374,13 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-string-2-color: var(--md-purple-300);
   --jp-mirror-editor-meta-color: #b870ff;
   --jp-mirror-editor-qualifier-color: var(--neon-night-purple2);
-  --jp-mirror-editor-builtin-color: var(--neon-night-blue);
+  --jp-mirror-editor-builtin-color: var(--neon-night-blue0);
   --jp-mirror-editor-bracket-color: #997;
   --jp-mirror-editor-tag-color: var(--md-green-700);
   --jp-mirror-editor-attribute-color: var(--md-blue-700);
   --jp-mirror-editor-header-color: var(--md-blue-500);
   --jp-mirror-editor-quote-color: var(--md-green-300);
-  --jp-mirror-editor-link-color: var(--neon-night-blue);
+  --jp-mirror-editor-link-color: var(--neon-night-blue0);
   --jp-mirror-editor-error-color: var(--neon-night-red);
   --jp-mirror-editor-hr-color: #999;
 

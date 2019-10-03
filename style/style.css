@@ -153,7 +153,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .jp-Notebook .jp-Cell.jp-mod-active .jp-InputCollapser.jp-Cell-inputCollapser, 
 .jp-InputCollapser.jp-Cell-inputCollapser.jp-Collapser, 
 .jp-InputCollapser.jp-Cell-inputCollapser.jp-Collapser:hover{
-  background: var(--neon-night-blue);
+  background: var(--neon-night-blue1);
 }
 
 .jp-Notebook .jp-Cell.jp-mod-active .jp-OutputCollapser.jp-Cell-outputCollapser,
