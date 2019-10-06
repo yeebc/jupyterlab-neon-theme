@@ -58,7 +58,7 @@
 }
 
 /* Search tool */
-.jp-DocumentSearch-overlay * {
+.jp-DocumentSearch-overlay *,  .filter .bp3-input {
   font-family: 'Neon Bugler';
   font-size: 15px;
 }

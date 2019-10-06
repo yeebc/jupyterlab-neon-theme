@@ -5,7 +5,7 @@ A flat, 80's neon inspired theme for JupyterLab.
 <img src="https://raw.githubusercontent.com/yeebc/jupyterlab-neon-theme/master/screenshots/Neon Night.png" />
 <img src="https://raw.githubusercontent.com/yeebc/jupyterlab-neon-theme/master/screenshots/Neon Sunset.png" />
 
-This theme is hightly inspired by artworks of 80's Neon, Synthwave and Cyberpunk. It is optimized for **long-term use** but cooool and colorful.
+This theme is hightly inspired by artworks of 80's Neon, Synthwave and Cyberpunk. It is optimized for **long-term use** but colorful and cooool.
 
 ## Bonuses
 1. Search tool + neon billboard
@@ -30,7 +30,7 @@ To change fonts of editor and neon, firstly, add your font files to [`fonts`](ht
 
 ## Prerequisites
 
-* JupyterLab >= 1.0.0
+* JupyterLab >= 1.1.0
 
 ## Installation
 

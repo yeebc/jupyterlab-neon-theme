@@ -1,4 +1,8 @@
 /* Fix layout color */
+#jupyterlab-splash.dark {
+  background-color: var(--neon-night-bg0);
+ }
+ 
 .cm-s-jupyter .CodeMirror-activeline-background,
 .cm-s-jupyter .CodeMirror-gutter, .p-DockPanel-tabBar .p-TabBar-tab,
 .p-DockPanel-tabBar .p-TabBar-tab.p-mod-current, 
@@ -17,6 +21,7 @@
 
  #jp-main-dock-panel {
   background: transparent;
+  padding: 4px;
  }
   
  .p-Menu, .jp-Tooltip {
@@ -40,15 +45,13 @@
 
 /* Brackets */
 div.CodeMirror span.CodeMirror-matchingbracket {
-  color: var(--neon-night-green);
-  border-bottom: 1px solid var(--neon-night-green);
-  line-height: 1;
+  color: var(--neon-night-green0);
+  border-bottom: 1px solid var(--neon-night-green0);
 }
 
 div.CodeMirror span.CodeMirror-nonmatchingbracket {
-  color: var(--horizon-red);
-  border-bottom: 1px solid var(--horizon-dark-red-1);
-  line-height: 0.55;
+  color: var(--neon-night-red);
+  border-bottom: 1px solid var(--neon-night-red);
 }
 
 /*Flat scrollbar */
@@ -88,20 +91,13 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   font-weight: normal;
 }
 
-.cm-s-jupyter span.cm-variable-2 {
+.jp-Cell .cm-s-jupyter span.cm-variable-2 {
+  color: var(--neon-night-red);
   font-weight: bold;
 }
 
-.jp-InputArea-editor {
-  padding: 3px var(--jp-code-padding);
-} 
-
-.jp-Notebook {
-  padding: 10px calc(56px - var(--jp-cell-padding)) 10px 0;
-}
-
-.jp-OutputArea-child .jp-OutputArea-output {
-  padding: var(--jp-code-padding);
+.jp-Cell .jp-InputArea-editor {
+  padding: 3px 0;
 }
 
 .jp-OutputArea-child .jp-RenderedImage.jp-OutputArea-output{
@@ -110,26 +106,23 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 
 .jp-OutputArea-child .jp-OutputArea-output {
   margin-bottom: 3px;
+  padding: var(--jp-code-padding);
   background-color: var(--neon-night-bg1);
   border-radius: 5px;
 }
 
 .jp-Cell {
-  padding: 3px var(--jp-cell-padding);
+  padding: 3px 0;
 }
 
 /* Notebook prompt */
-.jp-OutputPrompt, .jp-Notebook .jp-Cell .jp-InputPrompt {
-  padding-right: 0;
-}
-
- .jp-Notebook .jp-Cell .jp-InputPrompt {
+.jp-InputPrompt {
   color: var(--neon-night-cyan);
   text-shadow: var(--neon-night-text-shadow0);
-  padding-top: 10px;  /* Works well with 14px code size */
+  padding-top: 11px;  /* Works well with 14px code size */
 }
 
-.jp-Notebook .jp-Cell .jp-OutputPrompt {
+.jp-OutputPrompt {
   color: #ffc8e0;
   text-shadow: var(--neon-night-text-shadow1);
   padding-top: 8px;  /* Works well with 14px code size */
@@ -138,6 +131,10 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .jp-Notebook .jp-Cell:not(.jp-mod-active) .jp-InputPrompt, 
 .jp-Notebook .jp-Cell:not(.jp-mod-active) .jp-OutputPrompt {
   text-shadow: none;
+}
+
+.jp-NotebookTools .jp-InputPrompt{
+  padding-top: 8px;
 }
 
 /* Notebook collapser */
@@ -229,7 +226,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 .jp-Notebook  .CodeMirror-linenumber{
-  padding: 0 20px 0 8px;
+  padding: 0 16px 0 8px;
 }
 
 /* Notebook tab bar */
@@ -260,8 +257,13 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 .jp-Toolbar {
+  padding: 0;
+}
+
+.jp-Toolbar.jp-NotebookPanel-toolbar {
   padding: 2px 0;
 }
+
 
 .p-DockPanel-tabBar .p-TabBar-tab:hover:not(.p-mod-current), 
 .p-DockPanel-tabBar .p-TabBar-tab.p-mod-current {
@@ -279,7 +281,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   margin: 16px 16px 0 0;
 }
 
-.jp-DocumentSearch-overlay, .jp-DocumentSearch-overlay-row:first-of-type {
+.jp-DocumentSearch-overlay, .jp-DocumentSearch-overlay-row:first-of-type, 
+.bp3-input-group.filter {
   border: 1.5px solid #eb244f;
   box-shadow: 0 0 5px 0 #951430, 0 0 10px 0px #951430, inset 0 0 5px 1px #951430;
 }
@@ -292,8 +295,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   padding: 2px;
 }
 
-.jp-DocumentSearch-input {
-  color: var(--neon-night-green);
+.jp-DocumentSearch-input, .filter .bp3-input{
+  color: var(--neon-night-green0);
   text-shadow: 0 0 5px #23854e, 0 0 5px #23854e, 0 0 2px #23854e;
 }
 
@@ -301,6 +304,10 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   font-size: 14px;
   color: #ffa666;
   text-shadow: 0 0 5px #854c23, 0 0 5px #854c23, 0 0 2px #854c23;
+}
+
+.jp-InputGroupAction {
+  padding: 5px;
 }
 
 /*Rendered text*/
@@ -313,7 +320,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 .jp-RenderedText pre .ansi-green-fg {
-  color: var(--neon-night-green);
+  color: var(--neon-night-green0);
 }
 
 .jp-RenderedText pre .ansi-green-intense-fg {
@@ -325,9 +332,13 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 .jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon:before {
-  color: var(--neon-night-green);
+  color: var(--neon-night-green0);
 }
 
 .jp-extensionmanager-buildprompt {
   color: var(--jp-ui-font-color1);
+}
+
+.cm-fat-cursor .CodeMirror-cursor {
+  width: var(--jp-code-cursor-width0);
 }

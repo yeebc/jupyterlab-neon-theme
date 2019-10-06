@@ -26,27 +26,29 @@ all of MD as it is not optimized for dense, information rich UIs.
 
 :root {
   /* Basic color scheme*/
-   --neon-night-red: #ff4954;
-   --neon-night-blue0: #00c9ff;
+   --neon-night-red: #ff5761;
+   --neon-night-blue0: #00ccff;
    --neon-night-blue1: #008bce;
-   --neon-night-yellow: #f9e24c;
-   --neon-night-green:#00ff80;
+   --neon-night-yellow: #f1d359;
+   --neon-night-green0:#00ff80;
+   --neon-night-green1:#b3e17f;
    --neon-night-cyan:#36f9f6;
-   --neon-night-peach0: #ff549d;
+   --neon-night-peach0: #ff63a6;
    --neon-night-peach1: #cb4d8e;
    --neon-night-pink: #f98478;
    --neon-night-purple0:#ef38e3;
    --neon-night-purple1:#929dfd;
-   --neon-night-purple2:#DF81FC;
-   --neon-night-purple3:#7b5ccc;
+   --neon-night-purple2:#f471c8;
+   --neon-night-purple3:#DF81FC;
+   --neon-night-purple4:#604a96;
    --neon-night-orange:#ff8b39;
    --neon-night-fg0:#bfbfbf;
-   --neon-night-bg0: #262537;
+   --neon-night-bg0: #252438;
    --neon-night-bg1: #302a46;
    --neon-night-bg2: hsl(250, 20%, 25%);
 
-   --neon-night-text-shadow0: 0 0 3px #0225ff, 0 0 10px #0225ff, 0 0 10px #0225ff, 2px 2px 1px #000;
-   --neon-night-text-shadow1: 0 0 3px #c10165, 0 0 10px #c10165, 0 0 10px #c10165, 2px 2px 1px #000;
+   --neon-night-text-shadow0: 0 0 2px #0225ff, 0 0 6px #0225ff, 0 0 6px #0225ff, 2px 2px 1px #000;
+   --neon-night-text-shadow1: 0 0 2px #c10165, 0 0 6px #c10165, 0 0 6px #c10165, 2px 2px 1px #000;
 
    --jp-private-horizontal-tab-height: 28px;
 
@@ -225,7 +227,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-layout-color1: #222136;
   --jp-layout-color2: var(--neon-night-bg2);
   --jp-layout-color3: var(--neon-night-bg2);
-  --jp-layout-color4: var(--neon-night-peach1);
+  --jp-layout-color4: var(--neon-night-orange);
 
   /* Inverse Layout
    *
@@ -288,7 +290,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-editor-active-background: var(--neon-night-bg0);
   --jp-cell-editor-active-border-color: var(--jp-brand-color2);
 
-  --jp-cell-prompt-width: 56px;
+  --jp-cell-prompt-width: 64px;
   --jp-cell-prompt-font-family: 'Source Code Pro', monospace;
   --jp-cell-prompt-letter-spacing: 0px;
   --jp-cell-prompt-opacity: 1;
@@ -296,14 +298,14 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-prompt-not-active-font-color: var(--neon-night-fg0);
   /* A custom blend of MD grey and blue 600
    * See https://meyerweb.com/eric/tools/color-blend/#546E7A:1E88E5:5:hex */
-  --jp-cell-inprompt-font-color: #307fc1;
+  --jp-cell-inprompt-font-color: var(--neon-night-blue0);
   /* A custom blend of MD grey and orange 600
    * https://meyerweb.com/eric/tools/color-blend/#546E7A:F4511E:5:hex */
-  --jp-cell-outprompt-font-color: #bf5b3d;
+  --jp-cell-outprompt-font-color:  var(--neon-night-peach1);
 
   /* Notebook specific styles */
 
-  --jp-notebook-padding: 10px;
+  --jp-notebook-padding: 12px;
   --jp-notebook-select-background: #3c3050;
   --jp-notebook-multiselected-color: #3c3050;
 
@@ -355,32 +357,32 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-editor-selected-background: var(--jp-layout-color2);
   --jp-editor-selected-focused-background: #3c3050;
-  --jp-editor-cursor-color: var(--neon-night-green);
+  --jp-editor-cursor-color: var(--neon-night-green0);
 
   /* Code mirror specific styles */
 
-  --jp-mirror-editor-keyword-color: var(--neon-night-peach0);
-  --jp-mirror-editor-atom-color: var(--neon-night-green);
-  --jp-mirror-editor-number-color: var(--neon-night-yellow);
+  --jp-mirror-editor-keyword-color: var(--neon-night-yellow);
+  --jp-mirror-editor-atom-color: var(--neon-night-peach0);
+  --jp-mirror-editor-number-color: var(--neon-night-green1);
   --jp-mirror-editor-def-color: var(--neon-night-cyan);
   --jp-mirror-editor-variable-color: var(--neon-night-fg0);
-  --jp-mirror-editor-variable-2-color: var(--neon-night-red);
-  --jp-mirror-editor-variable-3-color: var(--md-green-600);
-  --jp-mirror-editor-punctuation-color: var(--md-blue-400);
+  --jp-mirror-editor-variable-2-color: var(--neon-night-pink);
+  --jp-mirror-editor-variable-3-color: var(--neon-night-orange);
+  --jp-mirror-editor-punctuation-color: var(--neon-night-purple1);
   --jp-mirror-editor-property-color: var(--neon-night-purple1);
   --jp-mirror-editor-operator-color: var(--neon-night-purple0);
-  --jp-mirror-editor-comment-color: var(--neon-night-purple3);
-  --jp-mirror-editor-string-color: var(--neon-night-pink);
-  --jp-mirror-editor-string-2-color: var(--md-purple-300);
+  --jp-mirror-editor-comment-color: var(--neon-night-purple4);
+  --jp-mirror-editor-string-color: var(--neon-night-purple2);
+  --jp-mirror-editor-string-2-color:#b870ff;
   --jp-mirror-editor-meta-color: #b870ff;
-  --jp-mirror-editor-qualifier-color: var(--neon-night-purple2);
+  --jp-mirror-editor-qualifier-color: var(--neon-night-yellow);
   --jp-mirror-editor-builtin-color: var(--neon-night-blue0);
-  --jp-mirror-editor-bracket-color: #997;
-  --jp-mirror-editor-tag-color: var(--md-green-700);
-  --jp-mirror-editor-attribute-color: var(--md-blue-700);
-  --jp-mirror-editor-header-color: var(--md-blue-500);
-  --jp-mirror-editor-quote-color: var(--md-green-300);
-  --jp-mirror-editor-link-color: var(--neon-night-blue0);
+  --jp-mirror-editor-bracket-color: var(--neon-night-green0);
+  --jp-mirror-editor-tag-color: var(--neon-night-cyan);
+  --jp-mirror-editor-attribute-color: var(--neon-night-green0);
+  --jp-mirror-editor-header-color: var(--neon-night-peach0);
+  --jp-mirror-editor-quote-color: var(--neon-night-cyan);
+  --jp-mirror-editor-link-color: var(--neon-night-purple1);
   --jp-mirror-editor-error-color: var(--neon-night-red);
   --jp-mirror-editor-hr-color: #999;
 
@@ -399,7 +401,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-search-toggle-on-opacity: 1;
   --jp-search-selected-match-background-color: var(--neon-night-orange);
   --jp-search-selected-match-color: black;
-  --jp-search-unselected-match-background-color: var(--neon-night-green);
+  --jp-search-unselected-match-background-color: var(--neon-night-green0);
   --jp-search-unselected-match-color: var(--jp-ui-inverse-font-color0);
 
   /* scrollbar related styles. Supports every browser except Edge. */
