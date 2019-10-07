@@ -12,7 +12,7 @@ This theme is hightly inspired by artworks of 80's Neon, Synthwave and Cyberpunk
 1. Search tool + neon billboard
 2. Collapser + neon light
 3. Scrollbar + FM-84's "Atlas"  (compatible with webKit browsers)
-4. A surprise in the presentation mode ('Top menu' --> 'View' --> 'Presention mode')
+4. A surprise in the presentation mode (**Top menu** --> **View** --> **Presention mode**)
 
 
 ## Customize
@@ -33,7 +33,7 @@ To change fonts of editor and neon, firstly, add your font files to [`fonts`](ht
 
 
 ## Compatibility
-To support gradient scrollbars showed in screenshots, webKit browsers like chrome are required. Otherwise, please activate the 'Theme Scrollbars' in the 'Top menu' --> 'Settings' --> 'JupyterLab Theme' for dark scrollbars (except Edge). This color scheme is primarily designed for python and ipynb, so it may be issues in other situations. If any problem you find, please report it to me in the [github](https://github.com/yeebc/jupyterlab-neon-theme/issues) and I'll try to fix it as soon as possible.
+To support gradient scrollbars showed in screenshots, **webKit browsers** like chrome are required. Otherwise, please activate the **Theme Scrollbars** in the **Top menu** --> **Settings** --> **JupyterLab Theme** for dark scrollbars (except **Edge**). This color scheme is primarily designed for python and ipynb, so it may be issues in other situations. If any problem you find, please report it to me in the [github](https://github.com/yeebc/jupyterlab-neon-theme/issues) and I'll try to fix it as soon as possible.
 
 
 ## Prerequisites
