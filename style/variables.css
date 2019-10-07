@@ -113,10 +113,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-border-width: 0px;
-  --jp-border-color0: var(--md-grey-700);
-  --jp-border-color1: var(--md-grey-800);
-  --jp-border-color2: var(--md-grey-800);
-  --jp-border-color3: var(--md-grey-900);
+  --jp-border-color0: #7b5ccc50;
+  --jp-border-color1: #7b5ccc50;
+  --jp-border-color2: #7b5ccc50;
+  --jp-border-color3: #7b5ccc50;
   --jp-border-radius: 2px;
 
   /* UI Fonts
@@ -135,7 +135,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-ui-font-size2: 1.2em;
   --jp-ui-font-size3: 1.44em;
 
-  --jp-ui-font-family: ubuntu, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+  --jp-ui-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
   /*
@@ -191,9 +191,9 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-font-color2: rgba(255, 255, 255, 0.7);
   --jp-content-font-color3: rgba(255, 255, 255, 0.5);
 
-  --jp-content-link-color: var(--md-blue-300);
+  --jp-content-link-color: var(--neon-night-blue0);
 
-  --jp-content-font-family: ubuntu, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  --jp-content-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
 
@@ -323,8 +323,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Rendermime styles */
 
   --jp-rendermime-error-background: rgba(244, 67, 54, 0.28);
-  --jp-rendermime-table-row-background: var(--md-grey-900);
-  --jp-rendermime-table-row-hover-background: rgba(3, 169, 244, 0.2);
+  --jp-rendermime-table-row-background: var(--neon-night-bg1);
+  --jp-rendermime-table-row-hover-background: var(--jp-brand-color1);
 
   /* Dialog specific styles */
 
@@ -351,7 +351,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-input-background: var(--neon-night-bg1);
   --jp-input-border-color: var(--jp-border-color1);
   --jp-input-active-border-color: var(--jp-brand-color1);
-  --jp-input-active-box-shadow-color: inset 0px -1px 0 0px #f54bd2a8, inset 0px 1px 0 0px #02d4ff80;
+  --jp-input-active-box-shadow-color: inset 0px -1px 0 0px #7b5ccc50, inset 0px 1px 0 0px #7b5ccc50;
 
   /* General editor styles */
 
@@ -362,7 +362,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Code mirror specific styles */
 
   --jp-mirror-editor-keyword-color: var(--neon-night-yellow);
-  --jp-mirror-editor-atom-color: var(--neon-night-peach0);
+  --jp-mirror-editor-atom-color: var(--neon-night-yellow);
   --jp-mirror-editor-number-color: var(--neon-night-green1);
   --jp-mirror-editor-def-color: var(--neon-night-cyan);
   --jp-mirror-editor-variable-color: var(--neon-night-fg0);
@@ -375,7 +375,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-string-color: var(--neon-night-purple2);
   --jp-mirror-editor-string-2-color:#b870ff;
   --jp-mirror-editor-meta-color: #b870ff;
-  --jp-mirror-editor-qualifier-color: var(--neon-night-yellow);
+  --jp-mirror-editor-qualifier-color: var(--neon-night-peach0);
   --jp-mirror-editor-builtin-color: var(--neon-night-blue0);
   --jp-mirror-editor-bracket-color: var(--neon-night-green0);
   --jp-mirror-editor-tag-color: var(--neon-night-cyan);
@@ -408,15 +408,15 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* colors based on JetBrain's Darcula theme */
 
-  --jp-scrollbar-background-color: #3f4244;
-  --jp-scrollbar-thumb-color: 88, 96, 97; /* need to specify thumb color as an RGB triplet */
+  --jp-scrollbar-background-color: #00000000;
+  --jp-scrollbar-thumb-color: 92, 81,117; /* need to specify thumb color as an RGB triplet */
 
-  --jp-scrollbar-endpad: 3px; /* the minimum gap between the thumb and the ends of a scrollbar */
+  --jp-scrollbar-endpad: 0px; /* the minimum gap between the thumb and the ends of a scrollbar */
 
   /* hacks for setting the thumb shape. These do nothing in Firefox */
 
-  --jp-scrollbar-thumb-margin: 3.5px; /* the space in between the sides of the thumb and the track */
-  --jp-scrollbar-thumb-radius: 9px; /* set to a large-ish value for rounded endcaps on the thumb */
+  --jp-scrollbar-thumb-margin: 0px; /* the space in between the sides of the thumb and the track */
+  --jp-scrollbar-thumb-radius: 10px; /* set to a large-ish value for rounded endcaps on the thumb */
 
     /* Icon colors that work well with light or dark backgrounds */
     --jp-icon-contrast-color0: var(--md-purple-600);

@@ -1,4 +1,8 @@
 /* Fix layout color */
+body {
+  line-height: 1.3077; /* 17px for 13px font */
+}
+
 #jupyterlab-splash.dark {
   background-color: var(--neon-night-bg0);
  }
@@ -68,7 +72,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background:#ddb8ff50;
+  background:#5d5175;
   border-radius: 10px;
   min-height: 100px;
 }
@@ -351,4 +355,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 
 .cm-fat-cursor .CodeMirror-cursor {
   width: var(--jp-code-cursor-width0);
+}
+
+#setting-editor .jp-SettingsRawEditor .jp-Toolbar {
+  padding: 4px;
 }

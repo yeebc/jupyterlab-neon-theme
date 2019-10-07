@@ -11,8 +11,8 @@ This theme is hightly inspired by artworks of 80's Neon, Synthwave and Cyberpunk
 ## Bonuses
 1. Search tool + neon billboard
 2. Collapser + neon light
-3. Scrollbar + FM-84's "Atlas"  (compatible with Chrome)
-4. A surprise in the presentation mode (Top menu --> View --> Presention mode)
+3. Scrollbar + FM-84's "Atlas"  (compatible with webKit browsers)
+4. A surprise in the presentation mode ('Top menu' --> 'View' --> 'Presention mode')
 
 
 ## Customize
@@ -32,20 +32,21 @@ To use an images as background, uncomment the relative part of codes, and change
 To change fonts of editor and neon, firstly, add your font files to [`fonts`](https://github.com/yeebc/jupyterlab-neon-theme/tree/master/style/fonts) directory and update [`fonts.css`](https://github.com/yeebc/jupyterlab-neon-theme/blob/master/style/fonts.css) to register them. Then follow my comments to employ your registered fonts.
 
 
-## Prerequisites
+## Compatibility
+To support gradient scrollbars showed in screenshots, webKit browsers like chrome are required. Otherwise, please activate the 'Theme Scrollbars' in the 'Top menu' --> 'Settings' --> 'JupyterLab Theme' for dark scrollbars (except Edge). This color scheme is primarily designed for python and ipynb, so it may be issues in other situations. If any problem you find, please report it to me in the [github](https://github.com/yeebc/jupyterlab-neon-theme/issues) and I'll try to fix it as soon as possible.
 
-* JupyterLab >= 1.1.0
+
+## Prerequisites
+* JupyterLab >= 1.0.0
 
 
 ## Package installation
-
 ```bash
 jupyter labextension install @yeebc/jupyterlab_neon_theme
 ```
 
 
 ## Development installation
-
 For a development install (requires npm version 4 or later), clone the github repo and do the following in the repository directory:
 
 ```bash
@@ -59,6 +60,10 @@ To rebuild the package and the JupyterLab app:
 npm run build
 jupyter lab build
 ```
+
+
+## Contributing
+I welcome any contribution to this theme. You can get more imfomation about the project structure of JupyterLab theme extensions from [offiacl document](https://jupyterlab.readthedocs.io/en/stable/developer/css.html).
 
 
 ## Thanks
