@@ -97,7 +97,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 .jp-Cell .jp-InputArea-editor {
-  padding: 3px 0;
+  padding: 2px 0;
 }
 
 .jp-OutputArea-child .jp-RenderedImage.jp-OutputArea-output{
@@ -111,8 +111,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   border-radius: 5px;
 }
 
-.jp-Cell {
-  padding: 3px 0;
+.jp-Cell, .jp-CodeConsole .jp-Cell {
+  padding: 2px 0;
 }
 
 /* Notebook prompt */
@@ -138,43 +138,47 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 /* Notebook collapser */
-.jp-Notebook .jp-Cell .jp-Collapser:hover {
+.jp-Cell .jp-Collapser:hover {
   box-shadow: none;
 }
 
-.jp-Notebook .jp-Cell .jp-Collapser {
+.jp-Cell .jp-Collapser {
   opacity: 0;
 }
 
+.jp-CodeConsole-content .jp-Cell .jp-Collapser:hover {
+  opacity: 1;
+  box-shadow: none;
+}
+
 /* Neon off*/
-.jp-Notebook .jp-Cell.jp-mod-active .jp-InputCollapser.jp-Cell-inputCollapser, 
+.jp-Cell.jp-mod-active .jp-InputCollapser.jp-Cell-inputCollapser, 
 .jp-InputCollapser.jp-Cell-inputCollapser.jp-Collapser, 
 .jp-InputCollapser.jp-Cell-inputCollapser.jp-Collapser:hover{
   background: var(--neon-night-blue1);
 }
 
-.jp-Notebook .jp-Cell.jp-mod-active .jp-OutputCollapser.jp-Cell-outputCollapser,
+.jp-Cell.jp-mod-active .jp-OutputCollapser.jp-Cell-outputCollapser,
 .jp-OutputCollapser.jp-Cell-outputCollapser.jp-Collapser, 
 .jp-OutputCollapser.jp-Cell-outputCollapser.jp-Collapser:hover{
   background: var(--neon-night-peach1);
 }
 
-.jp-Notebook .jp-Cell.jp-mod-active .jp-InputCollapser.jp-Cell-inputCollapser,
-.jp-Notebook .jp-Cell.jp-mod-active .jp-OutputCollapser.jp-Cell-outputCollapser {
+.jp-Cell.jp-mod-active .jp-InputCollapser.jp-Cell-inputCollapser,
+.jp-Cell.jp-mod-active .jp-OutputCollapser.jp-Cell-outputCollapser {
   transition: box-shadow cubic-bezier(0, 0.2, 0, 0.2) 0.5s, background cubic-bezier(0, 0.2, 0, 0.2) 0.5s;
   opacity: 1;
 }
 
 /* Neon on*/
-.jp-Notebook .jp-Cell.jp-mod-active .jp-InputCollapser.jp-Cell-inputCollapser:hover {
+.jp-Cell.jp-mod-active .jp-InputCollapser.jp-Cell-inputCollapser:hover {
   background: var(--neon-night-cyan);
-  box-shadow: 1px 1px 1px, 0 0 15px #0225ff, 0 0 5px 0.1px #0225ff, inset 0 0 1px 0.2px #0225ff;
+  box-shadow: 0 0 1px, 0 0 15px #0225ff, 0 0 5px 0.1px #0225ff, inset 0 0 1px 0.2px #0225ff;
 }
 
-.jp-Notebook .jp-Cell.jp-mod-active .jp-OutputCollapser.jp-Cell-outputCollapser:hover {
+.jp-Cell.jp-mod-active .jp-OutputCollapser.jp-Cell-outputCollapser:hover {
   background: #ffc8e0;
-  box-shadow: 
-  1px 1px 1px, 0 0 15px #c10165, 0 0 5px 0.1px #c10165, inset 0 0 1px 0.2px #c10165;
+  box-shadow: 0 0 1px, 0 0 15px #c10165, 0 0 5px 0.1px #c10165, inset 0 0 1px 0.2px #c10165;
 }
 
 .cm-s-jupyter span.cm-def {

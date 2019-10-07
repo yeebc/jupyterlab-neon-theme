@@ -7,14 +7,18 @@ A flat, 80's neon inspired theme for JupyterLab.
 
 This theme is hightly inspired by artworks of 80's Neon, Synthwave and Cyberpunk. It is optimized for **long-term use** but colorful and cooool.
 
+
 ## Bonuses
 1. Search tool + neon billboard
 2. Collapser + neon light
 3. Scrollbar + FM-84's "Atlas"  (compatible with Chrome)
 4. A surprise in the presentation mode (Top menu --> View --> Presention mode)
 
+
 ## Customize
-You may don't like the default background or the transparent UI, so codes of these controversial designs are put separately into [`custom.css`](https://github.com/yeebc/jupyterlab-neon-theme/tree/master/style/custom.css) and commented detaily for you to customize.
+You may don't like the default background or the transparent UI, so codes of these controversial designs are put separately into [`custom.css`](https://github.com/yeebc/jupyterlab-neon-theme/tree/master/style/custom.css) and commented detaily for you to customize. 
+
+After you edited css files, please follow instructions the [Development installation](https://github.com/yeebc/jupyterlab-neon-theme#development-installation) to reinstall.
 
 ### 1. Transparent left/top bar
 PLease follow the comments to ajust the transparency.
@@ -32,15 +36,17 @@ To change fonts of editor and neon, firstly, add your font files to [`fonts`](ht
 
 * JupyterLab >= 1.1.0
 
-## Installation
+
+## Package installation
 
 ```bash
 jupyter labextension install @yeebc/jupyterlab_neon_theme
 ```
 
-## Development
 
-For a development install (requires npm version 4 or later), do the following in the repository directory:
+## Development installation
+
+For a development install (requires npm version 4 or later), clone the github repo and do the following in the repository directory:
 
 ```bash
 npm install
@@ -53,6 +59,7 @@ To rebuild the package and the JupyterLab app:
 npm run build
 jupyter lab build
 ```
+
 
 ## Thanks
 You may also like  [SynthWave '84](https://github.com/robb0wen/synthwave-vscode), my favorite VS Code theme,  with similar style and  it is more compatible with HTML & CSS, JS.

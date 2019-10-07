@@ -37,7 +37,7 @@ all of MD as it is not optimized for dense, information rich UIs.
    --neon-night-peach1: #cb4d8e;
    --neon-night-pink: #f98478;
    --neon-night-purple0:#ef38e3;
-   --neon-night-purple1:#929dfd;
+   --neon-night-purple1:#a2aaff;
    --neon-night-purple2:#f471c8;
    --neon-night-purple3:#DF81FC;
    --neon-night-purple4:#604a96;
@@ -298,10 +298,10 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-prompt-not-active-font-color: var(--neon-night-fg0);
   /* A custom blend of MD grey and blue 600
    * See https://meyerweb.com/eric/tools/color-blend/#546E7A:1E88E5:5:hex */
-  --jp-cell-inprompt-font-color: var(--neon-night-blue0);
+  --jp-cell-inprompt-font-color: var(--neon-night-cyan);
   /* A custom blend of MD grey and orange 600
    * https://meyerweb.com/eric/tools/color-blend/#546E7A:F4511E:5:hex */
-  --jp-cell-outprompt-font-color:  var(--neon-night-peach1);
+  --jp-cell-outprompt-font-color:  #ffc8e0;
 
   /* Notebook specific styles */
 
@@ -332,7 +332,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Console specific styles */
 
-  --jp-console-padding: 10px;
+  --jp-console-padding: 12px;
 
   /* Toolbar specific styles */
 
