@@ -146,11 +146,6 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   opacity: 0;
 }
 
-.jp-CodeConsole-content .jp-Cell .jp-Collapser:hover {
-  opacity: 1;
-  box-shadow: none;
-}
-
 /* Neon off*/
 .jp-Cell.jp-mod-active .jp-InputCollapser.jp-Cell-inputCollapser, 
 .jp-InputCollapser.jp-Cell-inputCollapser.jp-Collapser, 
@@ -192,6 +187,17 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 /* Let's lit neon in the presentation mode~ */
 .jp-mod-presentationMode .jp-Notebook .cm-s-jupyter span.cm-def {
   text-shadow: var(--neon-night-text-shadow0);
+}
+
+/* Console */
+.jp-CodeConsole-content .jp-Cell .jp-Collapser:hover {
+  opacity: 1;
+  box-shadow: none;
+}
+
+.jp-ConsolePanel::before {
+  border-bottom: none;
+  box-shadow: none;
 }
 
 /* Top, side, bottom bar */

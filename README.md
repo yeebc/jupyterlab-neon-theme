@@ -18,7 +18,7 @@ This theme is hightly inspired by artworks of 80's Neon, Synthwave and Cyberpunk
 ## Customize
 You may don't like the default background or the transparent UI, so codes of these controversial designs are put separately into [`custom.css`](https://github.com/yeebc/jupyterlab-neon-theme/tree/master/style/custom.css) and commented detaily for you to customize. 
 
-After you edited css files, please follow instructions the [Development installation](https://github.com/yeebc/jupyterlab-neon-theme#development-installation) to reinstall.
+After you edited css files, please follow instructions in the [Development installation](https://github.com/yeebc/jupyterlab-neon-theme#development-installation) to reinstall.
 
 ### 1. Transparent left/top bar
 PLease follow the comments to ajust the transparency.

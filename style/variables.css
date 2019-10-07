@@ -337,7 +337,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Toolbar specific styles */
 
   --jp-toolbar-border-color: var(--jp-border-color2);
-  --jp-toolbar-micro-height: 1px;
+  --jp-toolbar-micro-height: 0px;
   --jp-toolbar-background: none;
   --jp-toolbar-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
   --jp-toolbar-header-margin: 4px 4px 0px 4px;
