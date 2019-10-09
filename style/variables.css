@@ -29,21 +29,21 @@ all of MD as it is not optimized for dense, information rich UIs.
    --neon-night-red: #ff5761;
    --neon-night-blue0: #00ccff;
    --neon-night-blue1: #008bce;
-   --neon-night-yellow: #f1d359;
+   --neon-night-yellow: #ecd167;
    --neon-night-green0:#00ff80;
    --neon-night-green1:#b3e17f;
    --neon-night-cyan:#36f9f6;
    --neon-night-peach0: #ff63a6;
    --neon-night-peach1: #cb4d8e;
-   --neon-night-pink: #f98478;
+   --neon-night-pink: #ff8c8c;
    --neon-night-purple0:#ef38e3;
-   --neon-night-purple1:#a2aaff;
-   --neon-night-purple2:#f471c8;
+   --neon-night-purple1:#a2adff;
+   --neon-night-purple2:#ff72cf;
    --neon-night-purple3:#DF81FC;
    --neon-night-purple4:#604a96;
-   --neon-night-orange:#ff8b39;
+   --neon-night-orange:#ff9246;
    --neon-night-fg0:#bfbfbf;
-   --neon-night-bg0: #252438;
+   --neon-night-bg0: #27263b;
    --neon-night-bg1: #302a46;
    --neon-night-bg2: hsl(250, 20%, 25%);
 
