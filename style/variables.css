@@ -204,7 +204,7 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-code-font-size: 14px;
-  --jp-code-line-height: 1.3571; /* 19px for 14px base */
+  --jp-code-line-height: 1.3572; /* 19px for 14px base */
   --jp-code-padding: 6px; /* 6px for 14px base */
   --jp-code-font-family-default: "Source Code Pro", monospace;
   --jp-code-font-family: var(--jp-code-font-family-default);

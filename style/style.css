@@ -123,13 +123,13 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .jp-InputPrompt {
   color: var(--neon-night-cyan);
   text-shadow: var(--neon-night-text-shadow0);
-  padding-top: 10px;  /* Works well with 14px code size */
+  padding-top: 9px;  /* Works well with 14px code size */
 }
 
 .jp-OutputPrompt {
   color: #ffc8e0;
   text-shadow: var(--neon-night-text-shadow1);
-  padding-top: 8px;  /* Works well with 14px code size */
+  padding-top: 7px;  /* Works well with 14px code size */
 }
 
 .jp-Notebook .jp-Cell:not(.jp-mod-active) .jp-InputPrompt, 
