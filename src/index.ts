@@ -11,7 +11,7 @@ import { IThemeManager } from '@jupyterlab/apputils';
 const plugin: JupyterFrontEndPlugin<void> = {
   id: '@yeebc/jupyterlab_neon_theme:plugin',
   requires: [IThemeManager],
-  activate: function(app: JupyterFrontEnd, manager: IThemeManager) {
+  activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
     const style = '@yeebc/jupyterlab_neon_theme/index.css';
 
     manager.register({
