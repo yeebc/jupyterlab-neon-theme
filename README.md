@@ -16,7 +16,7 @@ This theme is hightly inspired by artworks of 80's Neon, Synthwave and Cyberpunk
 
 
 ## Customize
-You may don't like the default background or the transparent UI, so codes of these controversial designs are put separately into [`custom.css`](https://github.com/yeebc/jupyterlab-neon-theme/tree/master/style/custom.css) and commented detaily for you to customize. 
+You may don't like the default background or the transparent UI, so codes concerning these controversial designs are separately put into [`custom.css`](https://github.com/yeebc/jupyterlab-neon-theme/tree/master/style/custom.css) and detailly commented for you to customize. 
 
 After you edited css files, please follow instructions in the [Development installation](https://github.com/yeebc/jupyterlab-neon-theme#development-installation) to reinstall.
 
@@ -24,20 +24,20 @@ After you edited css files, please follow instructions in the [Development insta
 PLease follow the comments to ajust the transparency.
 
 ### 2. Background
-Two gradient backgrounds, 'Neon Night' and 'Neon Sunset', are provide. The default style is 'Neon Night' and you can uncomment codes to employ 'Neon Sunset' style.
+Two gradient backgrounds, 'Neon Night' and 'Neon Sunset', are provided. The default style is 'Neon Night' and you can uncomment codes to employ 'Neon Sunset' style.
 
-To use an images as background, uncomment the relative part of codes, and change the url to the path of your image.
+To use an image as background, uncomment the corresponding part of codes, and change the url to the path of your image.
 
 ### 3. Fonts
 To change fonts of editor and neon, firstly, add your font files to [`fonts`](https://github.com/yeebc/jupyterlab-neon-theme/tree/master/style/fonts) directory and update [`fonts.css`](https://github.com/yeebc/jupyterlab-neon-theme/blob/master/style/fonts.css) to register them. Then follow my comments to employ your registered fonts.
 
 
 ## Compatibility
-To support gradient scrollbars showed in screenshots, **webKit browsers** like chrome are required. Otherwise, please activate the **Theme Scrollbars** in the **Top menu** --> **Settings** --> **JupyterLab Theme** for dark scrollbars (except **Edge**). This color scheme is primarily designed for python and ipynb, so it may be issues in other situations. If any problem you find, please report it to me in the [github](https://github.com/yeebc/jupyterlab-neon-theme/issues) and I'll try to fix it as soon as possible.
+To support gradient scrollbars showed in screenshots, **webKit browsers** like chrome are required. Otherwise, please activate the **Theme Scrollbars** in the **Top menu** --> **Settings** --> **JupyterLab Theme** for dark scrollbars (except **Edge**). This color scheme is primarily designed for python and ipynb, so there may be issues in other situations. If any problem you find, please report it to me in the [Github](https://github.com/yeebc/jupyterlab-neon-theme/issues) and I'll try to fix it as soon as possible.
 
 
 ## Prerequisites
-* JupyterLab >= 1.0.0
+* JupyterLab >= 2.0.0
 
 
 ## Package installation
@@ -47,7 +47,7 @@ jupyter labextension install @yeebc/jupyterlab_neon_theme
 
 
 ## Development installation
-For a development install (requires npm version 4 or later), clone the github repo and do the following in the repository directory:
+For a development install (requires npm version 4 or later), clone this github repo and do the following in the repository directory:
 
 ```bash
 npm install
@@ -63,7 +63,7 @@ jupyter lab build
 
 
 ## Contributing
-I welcome any contribution to this theme. You can get more imfomation about the project structure of JupyterLab theme extensions from [offiacl document](https://jupyterlab.readthedocs.io/en/stable/developer/css.html).
+I welcome any contribution to this theme. You can get more imfomation about the project structure of JupyterLab theme extensions from [Official Document](https://jupyterlab.readthedocs.io/en/stable/developer/css.html).
 
 
 ## Thanks

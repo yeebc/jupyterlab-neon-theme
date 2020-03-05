@@ -236,7 +236,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 
 .CodeMirror-linenumber {
   color: var(--jp-ui-font-color3);
-  padding: 0 24px 0 16px;
+  padding: 0 16px;
 }
 
 .jp-Notebook  .CodeMirror-linenumber{
