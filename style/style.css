@@ -119,6 +119,11 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   padding: 2px 0;
 }
 
+.jp-Cell.jp-MarkdownCell{
+  margin-top: 8px;
+}
+
+
 /* Notebook prompt */
 .jp-InputPrompt {
   color: var(--neon-night-cyan);
