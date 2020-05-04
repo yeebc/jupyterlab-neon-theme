@@ -38,6 +38,7 @@ To support gradient scrollbars showed in screenshots, **webKit browsers** like c
 
 ## Prerequisites
 * JupyterLab >= 2.0.0
+
 This theme is an extension of Jupyterlab. In order to install JupyterLab extensions, you need to have Node.js installed and enable the **Extension Manager** which is disabled by default. More information can be found in the [Official User Guide](https://jupyterlab.readthedocs.io/en/stable/user/extensions.html).
 ```bash
 conda install -c conda-forge nodejs
@@ -45,6 +46,7 @@ conda install -c conda-forge nodejs
 
 ## Package installation
 * Using GUI
+
 You can use the extension manager to find and install this theme for JupyterLab. Please check [Official User Guide](https://jupyterlab.readthedocs.io/en/stable/user/extensions.html#finding-extensions) for detailed instructions.
 
 * Using the command
