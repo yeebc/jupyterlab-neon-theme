@@ -358,10 +358,6 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   color: var(--jp-ui-font-color1);
 }
 
-.cm-fat-cursor .CodeMirror-cursor {
-  width: var(--jp-code-cursor-width0);
-}
-
 #setting-editor .jp-SettingsRawEditor .jp-Toolbar {
   padding: 4px;
 }
