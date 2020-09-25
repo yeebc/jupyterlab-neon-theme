@@ -13,7 +13,7 @@
    rgba(180, 0, 255, 0.25), rgba(140, 0, 255, 0.25), rgba(255, 0, 100, 0.25));
 }
 
-.p-DockPanel-tabBar .p-TabBar-tab.jp-mod-current:before {
+.lm-DockPanel-tabBar .lm-TabBar-tab.jp-mod-current:before {
   background: linear-gradient(to right,
   #00000000, #4266ca, #a044ca, #ca44a9, #00000000)
 }
@@ -25,7 +25,7 @@
   rgba(222, 53, 124, 0.4), rgba(244, 234, 36, 0.4));
 }
 
-.p-DockPanel-tabBar .p-TabBar-tab.jp-mod-current:before {
+.lm-DockPanel-tabBar .lm-TabBar-tab.jp-mod-current:before{
   background: linear-gradient(to right,
   #00000000, #7334cb, #f36f8f, #ac7453, #00000000);
 } */
@@ -36,7 +36,7 @@
   background: url('images/background.jpg') center/cover no-repeat;
 }
 
-.p-DockPanel-tabBar .p-TabBar-tab.jp-mod-current:before {
+.lm-DockPanel-tabBar .lm-TabBar-tab.jp-mod-current:before {
   background: linear-gradient(to right,
   #00000000, #7334cb, #f36f8f, #ac7453, #00000000);
 } */

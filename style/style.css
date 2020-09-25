@@ -8,18 +8,18 @@ body {
  }
  
 .cm-s-jupyter .CodeMirror-activeline-background,
-.cm-s-jupyter .CodeMirror-gutter, .p-DockPanel-tabBar .p-TabBar-tab,
-.p-DockPanel-tabBar .p-TabBar-tab.p-mod-current, 
-.p-DockPanel-tabBar .p-TabBar-tab:hover:not(.p-mod-current) {
+.cm-s-jupyter .CodeMirror-gutter, .lm-DockPanel-tabBar .lm-TabBar-tab,
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current, 
+.lm-DockPanel-tabBar .lm-TabBar-tab:hover:not(.lm-mod-current) {
    background-color: var(--jp-layout-color0);
  }
 
- body, .p-DockPanel-tabBar, #jp-main-dock-panel, .p-Menu, .jp-Tooltip{
+ body, .lm-DockPanel-tabBar, #jp-main-dock-panel, .lm-Menu, .jp-Tooltip{
    background-color: var(--jp-layout-color1);
  }
 
- .p-MenuBar-item.p-mod-active, 
- .p-MenuBar.p-mod-active .p-MenuBar-item.p-mod-active {
+ .lm-MenuBar-item.lm-mod-active, 
+ .lm-MenuBar.lm-mod-active .lm-MenuBar-item.lm-mod-active {
   background-color: #5d5b7b54;
  }
 
@@ -28,7 +28,7 @@ body {
   padding: 4px;
  }
   
- .p-Menu, .jp-Tooltip {
+ .lm-Menu, .jp-Tooltip {
   border: 1px solid #2f2d43;
 }
 
@@ -37,12 +37,12 @@ body {
  }
 
  /* Translucent area */
-.jp-SideBar.p-TabBar, #jp-top-panel {
+.jp-SideBar.lm-TabBar, #jp-top-panel {
    backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
  }
 
- .jp-SideBar .p-TabBar-tab, .p-MenuBar {
+ .jp-SideBar .lm-TabBar-tab, .lm-MenuBar {
    background: unset !important;
  }
 
@@ -218,11 +218,11 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   border-bottom: 1px solid #000;
 }
 
-.jp-SideBar .p-TabBar-tab:not(.p-mod-current) .jp-icon3[fill] {
+.jp-SideBar .lm-TabBar-tab:not(.lm-mod-current) .jp-icon3[fill] {
   fill: var(--jp-inverse-layout-color4);
 }
 
-.jp-SideBar .p-TabBar-tab.p-mod-current .jp-icon3[fill]{
+.jp-SideBar .lm-TabBar-tab.lm-mod-current .jp-icon3[fill]{
   fill: var(--jp-inverse-layout-color2);
 }
 
@@ -230,7 +230,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   color: var(--jp-ui-font-color2);
 }
 
-.jp-SideBar .p-TabBar-tab:hover:not(.p-mod-current) .jp-icon3[fill]{
+.jp-SideBar .lm-TabBar-tab:hover:not(.lm-mod-current) .jp-icon3[fill]{
   fill: var(--jp-inverse-layout-color2);
 }
 
@@ -249,29 +249,29 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 /* Notebook tab bar */
-.p-DockPanel-tabBar {
+.lm-DockPanel-tabBar {
   background: transparent;
 }
 
-.p-DockPanel-tabBar .p-TabBar-tab {
+.lm-DockPanel-tabBar .lm-TabBar-tab {
   margin-left: 2px;
   transition: text-shadow cubic-bezier(0, 0.2, 0, 0.2) 0.2s, color cubic-bezier(0, 0.2, 0, 0.2) 0.2s, 
   opacity 0.2s;
 }
 
-.p-DockPanel-tabBar .p-TabBar-tab.jp-mod-current:before {
+.lm-DockPanel-tabBar .lm-TabBar-tab.jp-mod-current:before {
   top: auto;
   bottom: calc(-1 * var(--jp-border-width));
   height: 1.5px;
 } 
 
-.p-DockPanel-tabBar .p-TabBar-tab.p-mod-closable > .p-TabBar-tabCloseIcon {
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-closable > .lm-TabBar-tabCloseIcon {
   padding-top: 12px;
   opacity: 0;
 }
 
-.p-DockPanel-tabBar .p-TabBar-tab.p-mod-closable:hover:not(.p-mod-current) > .p-TabBar-tabCloseIcon,
-.p-DockPanel-tabBar .p-TabBar-tab.p-mod-closable.p-mod-current  > .p-TabBar-tabCloseIcon {
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-closable:hover:not(.lm-mod-current) > .lm-TabBar-tabCloseIcon,
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-closable.lm-mod-current  > .lm-TabBar-tabCloseIcon {
   opacity: 1;
 }
 
@@ -284,14 +284,14 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 
-.p-DockPanel-tabBar .p-TabBar-tab:hover:not(.p-mod-current), 
-.p-DockPanel-tabBar .p-TabBar-tab.p-mod-current {
+.lm-DockPanel-tabBar .lm-TabBar-tab:hover:not(.lm-mod-current), 
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current {
   color: #ffeef6;
   text-shadow: 0 0 2px #b33576, 0 0 6px #6b2e4e, 0 0 6px #6b2e4e, 2px 2px 1px #000;
   opacity: 1;
 }
 
-.p-DockPanel-tabBar .p-TabBar-tab {
+.lm-DockPanel-tabBar .lm-TabBar-tab {
   opacity: 0.6;
 }
 
@@ -360,4 +360,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 
 #setting-editor .jp-SettingsRawEditor .jp-Toolbar {
   padding: 4px;
+}
+
+#setting-editor .jp-PluginList li :hover {
+  border: none;
 }
