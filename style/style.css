@@ -128,13 +128,13 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .jp-InputPrompt {
   color: var(--neon-night-cyan);
   text-shadow: var(--neon-night-text-shadow0);
-  padding-top: 9px;  /* Works well with 14px code size */
+  padding-top: 7px;  /* Works well with 13px code size */
 }
 
 .jp-OutputPrompt {
   color: #ffc8e0;
   text-shadow: var(--neon-night-text-shadow1);
-  padding-top: 7px;  /* Works well with 14px code size */
+  padding-top: 6px;  /* Works well with 13px code size */
 }
 
 .jp-Notebook .jp-Cell:not(.jp-mod-active) .jp-InputPrompt, 
@@ -266,7 +266,6 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 } 
 
 .lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-closable > .lm-TabBar-tabCloseIcon {
-  padding-top: 12px;
   opacity: 0;
 }
 
