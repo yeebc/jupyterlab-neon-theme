@@ -276,6 +276,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 
 .jp-Toolbar {
   padding: 0;
+  z-index: 10;
 }
 
 .jp-Toolbar.jp-NotebookPanel-toolbar {
@@ -361,6 +362,6 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   padding: 4px;
 }
 
-#setting-editor .jp-PluginList li :hover {
-  border: none;
+#setting-editor .jp-PluginList li:hover {
+  border-color: transparent;
 }
