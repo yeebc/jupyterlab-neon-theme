@@ -87,3 +87,4 @@ I welcome any contribution to this theme. You can get more imfomation about the 
 
 ## Thanks
 You may also like  [SynthWave '84](https://github.com/robb0wen/synthwave-vscode), my favorite VS Code theme,  with similar style and  it is more compatible with HTML & CSS, JS.
+And [Welcome to 1984](https://github.com/juanmnl/vs-1984).
