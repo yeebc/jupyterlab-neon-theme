@@ -4,10 +4,10 @@
 ![GitHub stars](https://img.shields.io/github/stars/yeebc/jupyterlab-neon-theme?style=for-the-badge&color=fffb00)
 ![License](https://img.shields.io/npm/l/@yeebc/jupyterlab_neon_theme?style=for-the-badge&color=ef38e3)
 
-A flat, 80's neon inspired theme for JupyterLab.
+A flat, 80's neon inspired theme for JupyterLab. **This branch is an archive for version 2.x which is not maintained anymore.**
 
-<img src="https://raw.githubusercontent.com/yeebc/jupyterlab-neon-theme/master/screenshots/Neon Night.png" />
-<img src="https://raw.githubusercontent.com/yeebc/jupyterlab-neon-theme/master/screenshots/Neon Sunset.png" />
+<img src="https://raw.githubusercontent.com/yeebc/jupyterlab-neon-theme/archive_version2.x/screenshots/Neon Night.png" />
+<img src="https://raw.githubusercontent.com/yeebc/jupyterlab-neon-theme/archive_version2.x/screenshots/Neon Sunset.png" />
 
 This theme is hightly inspired by artworks of 80's Neon, Synthwave and Cyberpunk. It is optimized for **long-term use** but colorful and cooool.
 
