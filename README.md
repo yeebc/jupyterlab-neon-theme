@@ -15,13 +15,16 @@ This theme is hightly inspired by artworks of 80's Neon, Synthwave and Cyberpunk
 There is a big update for the color scheme since version 3.0.0. If you are old users and don't like the new style, please find the archive [here](https://github.com/yeebc/jupyterlab-neon-theme/tree/archive_version2.x). However, unfortunately it would not be maintained anymore.
 
 ## Bonuses
-1. Search tool * neon billboard
+**1. Search tool * Neon billboard**
 <img src="https://raw.githubusercontent.com/yeebc/jupyterlab-neon-theme/master/screenshots/Billboard.png" />
-2. Collapser * neon light
+
+**2. Collapser * Neon light**
 <img src="https://raw.githubusercontent.com/yeebc/jupyterlab-neon-theme/master/screenshots/Collapser.png" />
-3. Scrollbar * FM-84's "Atlas"  (only compatible with webKit browsers)
+
+**3. Scrollbar * FM-84's "Atlas"  (only compatible with webKit browsers)**
 <img src="https://raw.githubusercontent.com/yeebc/jupyterlab-neon-theme/master/screenshots/Scrollbar.png" />
-4. Presentation mode (**Top menu** --> **View** --> **Presention mode**)
+
+**4. Presentation mode (**Top menu** --> **View** --> **Presention mode**)**
 <img src="https://raw.githubusercontent.com/yeebc/jupyterlab-neon-theme/master/screenshots/Presentation.png" />
 
 
@@ -87,4 +90,5 @@ I welcome any contribution to this theme. You can get more imfomation about the 
 
 ## Thanks
 You may also like  [SynthWave '84](https://github.com/robb0wen/synthwave-vscode), my favorite VS Code theme,  with similar style and  it is more compatible with HTML & CSS, JS.
+
 And [Welcome to 1984](https://github.com/juanmnl/vs-1984).
