@@ -95,8 +95,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   font-weight: normal;
 }
 
-.jp-Cell .cm-s-jupyter span.cm-variable-2 {
-  color: var(--neon-night-red);
+.cm-s-jupyter span.cm-variable-2 {
   font-weight: bold;
 }
 
@@ -123,6 +122,9 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   margin-top: 8px;
 }
 
+.jp-CodeCell.jp-mod-outputsScrolled .jp-Cell-outputArea {
+  box-shadow: none;
+}
 
 /* Notebook prompt */
 .jp-InputPrompt {
@@ -165,7 +167,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .jp-Cell.jp-mod-active .jp-OutputCollapser.jp-Cell-outputCollapser,
 .jp-OutputCollapser.jp-Cell-outputCollapser.jp-Collapser, 
 .jp-OutputCollapser.jp-Cell-outputCollapser.jp-Collapser:hover{
-  background: var(--neon-night-peach1);
+  background: var(--neon-night-purple2);
 }
 
 .jp-Cell.jp-mod-active .jp-InputCollapser.jp-Cell-inputCollapser,
@@ -185,16 +187,16 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   box-shadow: 0 0 1px, 0 0 15px #c10165, 0 0 5px 0.1px #c10165, inset 0 0 1px 0.2px #c10165;
 }
 
-.cm-s-jupyter span.cm-def {
+span.cm-keyword {
   transition: text-shadow cubic-bezier(0, 0.2, 0, 0.2) 0.2s;
 }
 
-.cm-s-jupyter span.cm-def:hover {
+span.cm-keyword:hover {
   text-shadow: var(--neon-night-text-shadow0);
 }
 
 /* Let's lit neon in the presentation mode~ */
-.jp-mod-presentationMode .jp-Notebook .cm-s-jupyter span.cm-def {
+.jp-mod-presentationMode .jp-Notebook span.cm-keyword {
   text-shadow: var(--neon-night-text-shadow0);
 }
 
@@ -210,10 +212,6 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 /* Top, side, bottom bar */
-.jp-FileBrowser {
-  color: var(--jp-ui-font-color2);
-}
-
 #jp-top-panel {
   border-bottom: 1px solid #000;
 }
@@ -226,9 +224,6 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   fill: var(--jp-inverse-layout-color2);
 }
 
-#jp-bottom-panel .f1235lqo {
-  color: var(--jp-ui-font-color2);
-}
 
 .jp-SideBar .lm-TabBar-tab:hover:not(.lm-mod-current) .jp-icon3[fill]{
   fill: var(--jp-inverse-layout-color2);
@@ -240,7 +235,6 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 .CodeMirror-linenumber {
-  color: var(--jp-ui-font-color3);
   padding: 0 16px;
 }
 
@@ -343,7 +337,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 .jp-RenderedText pre .ansi-green-intense-fg {
-  color: var(--neon-night-peach0);
+  color: var(--neon-night-purple2);
 }
 
 .jp-RenderedText pre .ansi-cyan-fg {
@@ -352,10 +346,6 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 
 .jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon:before {
   color: var(--neon-night-green0);
-}
-
-.jp-extensionmanager-buildprompt {
-  color: var(--jp-ui-font-color1);
 }
 
 #setting-editor .jp-SettingsRawEditor .jp-Toolbar {
