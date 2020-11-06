@@ -12,7 +12,7 @@ A flat, 80's neon inspired theme for JupyterLab.
 This theme is hightly inspired by artworks of 80's Neon, Synthwave and Cyberpunk. It is optimized for **long-term use** but colorful and cooool.
 
 ## Big update
-There is a big update for the color scheme since version 3.0.0. If you are old users and don't like the new style, please find the archive [here](https://github.com/yeebc/jupyterlab-neon-theme/tree/archive_version2.x). However, unfortunately it would not be maintained anymore.
+There is a big update for the color scheme since version 3.0.0. If you are **old users** and don't like the new style, please find the archive [here](https://github.com/yeebc/jupyterlab-neon-theme/tree/archive_version2.x). However, unfortunately it would not be maintained anymore.
 
 ## Bonuses
 **1. Search tool * Neon billboard**
