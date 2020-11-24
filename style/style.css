@@ -78,11 +78,16 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 ::-webkit-scrollbar-thumb:horizontal:hover, ::-webkit-scrollbar-thumb:horizontal:active {
-  background:  linear-gradient(to right, #fafc32, #f45959, #ef1eaf);
+  background: linear-gradient(to right, #fafc32, #f45959, #ef1eaf);
 }
 
 ::-webkit-scrollbar-thumb:vertical:hover, ::-webkit-scrollbar-thumb:vertical:active {
-  background:  linear-gradient(to bottom, #fafc32, #f45959, #ef1eaf);
+  background: linear-gradient(to bottom, #fafc32, #f45959, #ef1eaf);
+}
+
+.widget-slider .ui-slider {
+  background: linear-gradient(to right, #fafc32, #f45959, #ef1eaf);
+  border-radius: 4px;
 }
 
 /*Fix cursor of horizontal  scrollbar*/
@@ -130,7 +135,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .jp-InputPrompt {
   color: var(--neon-night-cyan);
   text-shadow: var(--neon-night-text-shadow0);
-  padding-top: 7px;  /* Works well with 13px code size */
+  padding-top: 8px;  /* Works well with 13px code size */
 }
 
 .jp-OutputPrompt {
@@ -229,6 +234,10 @@ span.cm-keyword:hover {
   fill: var(--jp-inverse-layout-color2);
 }
 
+.lm-CommandPalette-itemLabel > mark{
+  color: var(--neon-night-cyan);
+}
+
 /* Line numbers */
 .CodeMirror-gutters {
   border-right: none;
@@ -324,24 +333,68 @@ span.cm-keyword:hover {
 }
 
 /*Rendered text*/
-.jp-RenderedText pre .ansi-red-fg {
+.jp-RenderedText pre {
+  color: #dedede;
+}
+
+.jp-RenderedText pre .ansi-red-fg,
+.jp-RenderedText pre .ansi-red-bg {
   color: var(--neon-night-red);
 }
 
-.jp-RenderedText pre .ansi-blue-fg {
+.jp-RenderedText pre .ansi-red-intense-fg, 
+.jp-RenderedText pre .ansi-red-intense-bg {
+  color: var(--neon-night-red);
+}
+
+.jp-RenderedText pre .ansi-blue-fg, 
+.jp-RenderedText pre .ansi-blue-bg {
   color: var(--neon-night-purple1);
 }
 
-.jp-RenderedText pre .ansi-green-fg {
-  color: var(--neon-night-green0);
+.jp-RenderedText pre .ansi-blue-intense-fg, 
+.jp-RenderedText pre .ansi-blue-intense-bg {
+  color: var(--neon-night-blue0);
 }
 
-.jp-RenderedText pre .ansi-green-intense-fg {
+.jp-RenderedText pre .ansi-green-fg, 
+.jp-RenderedText pre .ansi-green-bg {
+  color: var(--neon-night-purple3);
+}
+
+.jp-RenderedText pre .ansi-green-intense-fg, 
+.jp-RenderedText pre .ansi-green-intense-bg {
   color: var(--neon-night-purple2);
 }
 
+.jp-RenderedText pre .ansi-yellow-fg, 
+.jp-RenderedText pre .ansi-yellow-bg {
+  color: var(--neon-night-purple0);
+}
+
+.jp-RenderedText pre .ansi-yellow-intense-fg, 
+.jp-RenderedText pre .ansi-yellow-intense-bg {
+  color: var(--neon-night-orange);
+}
+
+.jp-RenderedText pre .ansi-cyan-fg, 
 .jp-RenderedText pre .ansi-cyan-fg {
+  color: var(--neon-night-yellow);
+}
+
+.jp-RenderedText pre .ansi-cyan-intense-fg, 
+.jp-RenderedText pre .ansi-cyan-intense-bg {
   color: var(--neon-night-cyan);
+}
+
+.jp-RenderedText pre .ansi-magenta-fg, 
+.jp-RenderedText pre .ansi-magenta-fg {
+  color: var(--neon-night-pink);
+}
+
+.jp-RenderedText pre .ansi-magenta-intense-fg, 
+.jp-RenderedText pre .ansi-magenta-intense-bg {
+  color: var(--neon-night-peach);
 }
 
 .jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon:before {

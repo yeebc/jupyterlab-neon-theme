@@ -26,25 +26,25 @@ all of MD as it is not optimized for dense, information rich UIs.
 
 :root {
   /* Basic color scheme*/
-   --neon-night-red: #ff5761;
+   --neon-night-red: #ff0079;
    --neon-night-blue0: #51cdff;
    --neon-night-blue1: #00acff;
-   --neon-night-yellow: #ffe37a;
-   --neon-night-green0:#00ff98;
-   --neon-night-green1:#c4f68c;
-   --neon-night-cyan:#3cfffc;
+   --neon-night-yellow: #ffde63;
+   --neon-night-green0: #00ff98;
+   --neon-night-green1: #c4f68c;
+   --neon-night-cyan: #3cfffc;
    --neon-night-peach: #ff63a6;
    --neon-night-pink: #ff8c8c;
-   --neon-night-purple0:#ff37f2;
-   --neon-night-purple1:#a2adff;
-   --neon-night-purple2:#ff72cf;
-   --neon-night-purple3:#DF81FC;
-   --neon-night-purple4:#696092;
-   --neon-night-purple5:#c375ff;
-   --neon-night-orange:#ff9246;
-   --neon-night-fg0:#F8F8F2;
+   --neon-night-purple0: #ff37f2;
+   --neon-night-purple1: #a2adff;
+   --neon-night-purple2: #ff72cf;
+   --neon-night-purple3: #DF81FC;
+   --neon-night-purple4: #696092;
+   --neon-night-purple5: #c375ff;
+   --neon-night-orange: #ff9246;
+   --neon-night-fg0: #F8F8F2;
    --neon-night-bg0: #211d35;
-   --neon-night-bg1: #302a46;
+   --neon-night-bg1: #2f2a46;
    --neon-night-bg2: #3a2e6b;
 
    --neon-night-text-shadow0: 0 0 2px #0225ff, 0 0 6px #0225ff, 0 0 6px #0225ff, 2px 2px 1px #000;
@@ -226,7 +226,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-layout-color0: var(--neon-night-bg0);
   --jp-layout-color1: var(--neon-night-bg0);
   --jp-layout-color2: var(--neon-night-bg2);
-  --jp-layout-color3: var(--neon-night-bg2);
+  --jp-layout-color3: var(--neon-night-bg0);
   --jp-layout-color4: var(--neon-night-orange);
 
   /* Inverse Layout
@@ -423,4 +423,8 @@ all of MD as it is not optimized for dense, information rich UIs.
     --jp-icon-contrast-color1: var(--neon-night-green0);
     --jp-icon-contrast-color2: var(--neon-night-purple1);
     --jp-icon-contrast-color3: var(--neon-night-orange);
+
+    /* Widgets */
+    --jp-widgets-slider-handle-background-color: var(--neon-night-yellow);
+    --jp-widgets-slider-active-handle-color: var(--neon-night-orange);
 }
