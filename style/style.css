@@ -8,18 +8,18 @@ body {
  }
  
 .cm-s-jupyter .CodeMirror-activeline-background,
-.cm-s-jupyter .CodeMirror-gutter, .p-DockPanel-tabBar .p-TabBar-tab,
-.p-DockPanel-tabBar .p-TabBar-tab.p-mod-current, 
-.p-DockPanel-tabBar .p-TabBar-tab:hover:not(.p-mod-current) {
+.cm-s-jupyter .CodeMirror-gutter, .lm-DockPanel-tabBar .lm-TabBar-tab,
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current, 
+.lm-DockPanel-tabBar .lm-TabBar-tab:hover:not(.lm-mod-current) {
    background-color: var(--jp-layout-color0);
  }
 
- body, .p-DockPanel-tabBar, #jp-main-dock-panel, .p-Menu, .jp-Tooltip{
+ body, .lm-DockPanel-tabBar, #jp-main-dock-panel, .lm-Menu, .jp-Tooltip{
    background-color: var(--jp-layout-color1);
  }
 
- .p-MenuBar-item.p-mod-active, 
- .p-MenuBar.p-mod-active .p-MenuBar-item.p-mod-active {
+ .lm-MenuBar-item.lm-mod-active, 
+ .lm-MenuBar.lm-mod-active .lm-MenuBar-item.lm-mod-active {
   background-color: #5d5b7b54;
  }
 
@@ -28,7 +28,7 @@ body {
   padding: 4px;
  }
   
- .p-Menu, .jp-Tooltip {
+ .lm-Menu, .jp-Tooltip {
   border: 1px solid #2f2d43;
 }
 
@@ -37,12 +37,12 @@ body {
  }
 
  /* Translucent area */
-.jp-SideBar.p-TabBar, #jp-top-panel {
+.jp-SideBar.lm-TabBar, #jp-top-panel {
    backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
  }
 
- .jp-SideBar .p-TabBar-tab, .p-MenuBar {
+ .jp-SideBar .lm-TabBar-tab, .lm-MenuBar {
    background: unset !important;
  }
 
@@ -78,11 +78,16 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 ::-webkit-scrollbar-thumb:horizontal:hover, ::-webkit-scrollbar-thumb:horizontal:active {
-  background:  linear-gradient(to right, #fafc32, #f45959, #ef1eaf);
+  background: linear-gradient(to right, #fafc32, #f45959, #ef1eaf);
 }
 
 ::-webkit-scrollbar-thumb:vertical:hover, ::-webkit-scrollbar-thumb:vertical:active {
-  background:  linear-gradient(to bottom, #fafc32, #f45959, #ef1eaf);
+  background: linear-gradient(to bottom, #fafc32, #f45959, #ef1eaf);
+}
+
+.widget-slider .ui-slider {
+  background: linear-gradient(to right, #fafc32, #f45959, #ef1eaf);
+  border-radius: 4px;
 }
 
 /*Fix cursor of horizontal  scrollbar*/
@@ -95,8 +100,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   font-weight: normal;
 }
 
-.jp-Cell .cm-s-jupyter span.cm-variable-2 {
-  color: var(--neon-night-red);
+.cm-s-jupyter span.cm-variable-2 {
   font-weight: bold;
 }
 
@@ -119,17 +123,25 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   padding: 2px 0;
 }
 
+.jp-Cell.jp-MarkdownCell{
+  margin-top: 8px;
+}
+
+.jp-CodeCell.jp-mod-outputsScrolled .jp-Cell-outputArea {
+  box-shadow: none;
+}
+
 /* Notebook prompt */
 .jp-InputPrompt {
   color: var(--neon-night-cyan);
   text-shadow: var(--neon-night-text-shadow0);
-  padding-top: 9px;  /* Works well with 14px code size */
+  padding-top: 8px;  /* Works well with 13px code size */
 }
 
 .jp-OutputPrompt {
   color: #ffc8e0;
   text-shadow: var(--neon-night-text-shadow1);
-  padding-top: 7px;  /* Works well with 14px code size */
+  padding-top: 6px;  /* Works well with 13px code size */
 }
 
 .jp-Notebook .jp-Cell:not(.jp-mod-active) .jp-InputPrompt, 
@@ -160,7 +172,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .jp-Cell.jp-mod-active .jp-OutputCollapser.jp-Cell-outputCollapser,
 .jp-OutputCollapser.jp-Cell-outputCollapser.jp-Collapser, 
 .jp-OutputCollapser.jp-Cell-outputCollapser.jp-Collapser:hover{
-  background: var(--neon-night-peach1);
+  background: var(--neon-night-purple2);
 }
 
 .jp-Cell.jp-mod-active .jp-InputCollapser.jp-Cell-inputCollapser,
@@ -180,16 +192,16 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   box-shadow: 0 0 1px, 0 0 15px #c10165, 0 0 5px 0.1px #c10165, inset 0 0 1px 0.2px #c10165;
 }
 
-.cm-s-jupyter span.cm-def {
+span.cm-keyword {
   transition: text-shadow cubic-bezier(0, 0.2, 0, 0.2) 0.2s;
 }
 
-.cm-s-jupyter span.cm-def:hover {
+span.cm-keyword:hover {
   text-shadow: var(--neon-night-text-shadow0);
 }
 
 /* Let's lit neon in the presentation mode~ */
-.jp-mod-presentationMode .jp-Notebook .cm-s-jupyter span.cm-def {
+.jp-mod-presentationMode .jp-Notebook span.cm-keyword {
   text-shadow: var(--neon-night-text-shadow0);
 }
 
@@ -205,28 +217,25 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 /* Top, side, bottom bar */
-.jp-FileBrowser {
-  color: var(--jp-ui-font-color2);
-}
-
 #jp-top-panel {
   border-bottom: 1px solid #000;
 }
 
-.jp-SideBar .p-TabBar-tab:not(.p-mod-current) .jp-icon3[fill] {
+.jp-SideBar .lm-TabBar-tab:not(.lm-mod-current) .jp-icon3[fill] {
   fill: var(--jp-inverse-layout-color4);
 }
 
-.jp-SideBar .p-TabBar-tab.p-mod-current .jp-icon3[fill]{
+.jp-SideBar .lm-TabBar-tab.lm-mod-current .jp-icon3[fill]{
   fill: var(--jp-inverse-layout-color2);
 }
 
-#jp-bottom-panel .f1235lqo {
-  color: var(--jp-ui-font-color2);
+
+.jp-SideBar .lm-TabBar-tab:hover:not(.lm-mod-current) .jp-icon3[fill]{
+  fill: var(--jp-inverse-layout-color2);
 }
 
-.jp-SideBar .p-TabBar-tab:hover:not(.p-mod-current) .jp-icon3[fill]{
-  fill: var(--jp-inverse-layout-color2);
+.lm-CommandPalette-itemLabel > mark{
+  color: var(--neon-night-cyan);
 }
 
 /* Line numbers */
@@ -235,7 +244,6 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 .CodeMirror-linenumber {
-  color: var(--jp-ui-font-color3);
   padding: 0 16px;
 }
 
@@ -244,34 +252,34 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 /* Notebook tab bar */
-.p-DockPanel-tabBar {
+.lm-DockPanel-tabBar {
   background: transparent;
 }
 
-.p-DockPanel-tabBar .p-TabBar-tab {
+.lm-DockPanel-tabBar .lm-TabBar-tab {
   margin-left: 2px;
   transition: text-shadow cubic-bezier(0, 0.2, 0, 0.2) 0.2s, color cubic-bezier(0, 0.2, 0, 0.2) 0.2s, 
   opacity 0.2s;
 }
 
-.p-DockPanel-tabBar .p-TabBar-tab.jp-mod-current:before {
+.lm-DockPanel-tabBar .lm-TabBar-tab.jp-mod-current:before {
   top: auto;
   bottom: calc(-1 * var(--jp-border-width));
   height: 1.5px;
 } 
 
-.p-DockPanel-tabBar .p-TabBar-tab.p-mod-closable > .p-TabBar-tabCloseIcon {
-  padding-top: 12px;
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-closable > .lm-TabBar-tabCloseIcon {
   opacity: 0;
 }
 
-.p-DockPanel-tabBar .p-TabBar-tab.p-mod-closable:hover:not(.p-mod-current) > .p-TabBar-tabCloseIcon,
-.p-DockPanel-tabBar .p-TabBar-tab.p-mod-closable.p-mod-current  > .p-TabBar-tabCloseIcon {
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-closable:hover:not(.lm-mod-current) > .lm-TabBar-tabCloseIcon,
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-closable.lm-mod-current  > .lm-TabBar-tabCloseIcon {
   opacity: 1;
 }
 
 .jp-Toolbar {
   padding: 0;
+  z-index: 10;
 }
 
 .jp-Toolbar.jp-NotebookPanel-toolbar {
@@ -279,14 +287,14 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 
-.p-DockPanel-tabBar .p-TabBar-tab:hover:not(.p-mod-current), 
-.p-DockPanel-tabBar .p-TabBar-tab.p-mod-current {
+.lm-DockPanel-tabBar .lm-TabBar-tab:hover:not(.lm-mod-current), 
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current {
   color: #ffeef6;
   text-shadow: 0 0 2px #b33576, 0 0 6px #6b2e4e, 0 0 6px #6b2e4e, 2px 2px 1px #000;
   opacity: 1;
 }
 
-.p-DockPanel-tabBar .p-TabBar-tab {
+.lm-DockPanel-tabBar .lm-TabBar-tab {
   opacity: 0.6;
 }
 
@@ -325,38 +333,78 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 /*Rendered text*/
-.jp-RenderedText pre .ansi-red-fg {
+.jp-RenderedText pre {
+  color: #dedede;
+}
+
+.jp-RenderedText pre .ansi-red-fg,
+.jp-RenderedText pre .ansi-red-bg {
   color: var(--neon-night-red);
 }
 
-.jp-RenderedText pre .ansi-blue-fg {
+.jp-RenderedText pre .ansi-red-intense-fg, 
+.jp-RenderedText pre .ansi-red-intense-bg {
+  color: var(--neon-night-red);
+}
+
+.jp-RenderedText pre .ansi-blue-fg, 
+.jp-RenderedText pre .ansi-blue-bg {
   color: var(--neon-night-purple1);
 }
 
-.jp-RenderedText pre .ansi-green-fg {
-  color: var(--neon-night-green0);
+.jp-RenderedText pre .ansi-blue-intense-fg, 
+.jp-RenderedText pre .ansi-blue-intense-bg {
+  color: var(--neon-night-blue0);
 }
 
-.jp-RenderedText pre .ansi-green-intense-fg {
-  color: var(--neon-night-peach0);
+.jp-RenderedText pre .ansi-green-fg, 
+.jp-RenderedText pre .ansi-green-bg {
+  color: var(--neon-night-purple3);
 }
 
+.jp-RenderedText pre .ansi-green-intense-fg, 
+.jp-RenderedText pre .ansi-green-intense-bg {
+  color: var(--neon-night-purple2);
+}
+
+.jp-RenderedText pre .ansi-yellow-fg, 
+.jp-RenderedText pre .ansi-yellow-bg {
+  color: var(--neon-night-purple0);
+}
+
+.jp-RenderedText pre .ansi-yellow-intense-fg, 
+.jp-RenderedText pre .ansi-yellow-intense-bg {
+  color: var(--neon-night-orange);
+}
+
+.jp-RenderedText pre .ansi-cyan-fg, 
 .jp-RenderedText pre .ansi-cyan-fg {
+  color: var(--neon-night-yellow);
+}
+
+.jp-RenderedText pre .ansi-cyan-intense-fg, 
+.jp-RenderedText pre .ansi-cyan-intense-bg {
   color: var(--neon-night-cyan);
+}
+
+.jp-RenderedText pre .ansi-magenta-fg, 
+.jp-RenderedText pre .ansi-magenta-fg {
+  color: var(--neon-night-pink);
+}
+
+.jp-RenderedText pre .ansi-magenta-intense-fg, 
+.jp-RenderedText pre .ansi-magenta-intense-bg {
+  color: var(--neon-night-peach);
 }
 
 .jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon:before {
   color: var(--neon-night-green0);
 }
 
-.jp-extensionmanager-buildprompt {
-  color: var(--jp-ui-font-color1);
-}
-
-.cm-fat-cursor .CodeMirror-cursor {
-  width: var(--jp-code-cursor-width0);
-}
-
 #setting-editor .jp-SettingsRawEditor .jp-Toolbar {
   padding: 4px;
+}
+
+#setting-editor .jp-PluginList li:hover {
+  border-color: transparent;
 }

@@ -13,19 +13,19 @@
    rgba(180, 0, 255, 0.25), rgba(140, 0, 255, 0.25), rgba(255, 0, 100, 0.25));
 }
 
-.p-DockPanel-tabBar .p-TabBar-tab.jp-mod-current:before {
+.lm-DockPanel-tabBar .lm-TabBar-tab.jp-mod-current:before {
   background: linear-gradient(to right,
-  #00000000, #4266ca, #a044ca, #ca44a9, #00000000)
+  #00000000, #3765e7, #a044ca, #ca44a9, #00000000)
 }
 
 
  /* Neon Sunset Style */
  /* .jp-LabShell {
-  background: linear-gradient(to bottom right, rgba(118, 53, 222, 0.4),
-  rgba(222, 53, 124, 0.4), rgba(244, 234, 36, 0.4));
+  background: linear-gradient(to bottom right, rgb(118 53 222 / 0.5),
+  rgb(222 53 124 / 55%), rgb(244 218 36 / 0.6));
 }
 
-.p-DockPanel-tabBar .p-TabBar-tab.jp-mod-current:before {
+.lm-DockPanel-tabBar .lm-TabBar-tab.jp-mod-current:before{
   background: linear-gradient(to right,
   #00000000, #7334cb, #f36f8f, #ac7453, #00000000);
 } */
@@ -36,9 +36,9 @@
   background: url('images/background.jpg') center/cover no-repeat;
 }
 
-.p-DockPanel-tabBar .p-TabBar-tab.jp-mod-current:before {
+.lm-DockPanel-tabBar .lm-TabBar-tab.jp-mod-current:before {
   background: linear-gradient(to right,
-  #00000000, #7334cb, #f36f8f, #ac7453, #00000000);
+  #00000000, #3765e7, #a044ca, #ca44a9, #00000000)
 } */
 
 
@@ -46,13 +46,13 @@
 /* Code font */
 :root {
   /* Code font */
-  --jp-code-font-family: 'Source Code Pro', monospace;
+  --jp-code-font-family: Monaco, 'Source Code Pro', monospace;
 /* Prompt number of cell */
   --jp-cell-prompt-font-family:  'Vibur';
 }
 
 /* Opened files tab bar */
-.p-DockPanel-tabBar .p-TabBar-tab {
+.lm-DockPanel-tabBar .lm-TabBar-tab {
   font-family: 'Neon Bugler';
   font-size: 14px;
 }
@@ -61,10 +61,4 @@
 .jp-DocumentSearch-overlay *,  .filter .bp3-input {
   font-family: 'Neon Bugler';
   font-size: 15px;
-}
-
-/* Neon style definitions in the presentation mode~ */
-.jp-mod-presentationMode .jp-Notebook .cm-s-jupyter span.cm-def {
-  font-family: 'Neon Bugler';
-  font-size: 17px;
 }

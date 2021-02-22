@@ -1,5 +1,9 @@
 # Jupyterlab Neon Theme
 
+![Monthly Downloads](https://img.shields.io/npm/dm/@yeebc/jupyterlab_neon_theme?style=for-the-badge&color=36f9f6)
+![GitHub stars](https://img.shields.io/github/stars/yeebc/jupyterlab-neon-theme?style=for-the-badge&color=fffb00)
+![License](https://img.shields.io/npm/l/@yeebc/jupyterlab_neon_theme?style=for-the-badge&color=ef38e3)
+
 A flat, 80's neon inspired theme for JupyterLab.
 
 <img src="https://raw.githubusercontent.com/yeebc/jupyterlab-neon-theme/master/screenshots/Neon Night.png" />
@@ -7,12 +11,21 @@ A flat, 80's neon inspired theme for JupyterLab.
 
 This theme is hightly inspired by artworks of 80's Neon, Synthwave and Cyberpunk. It is optimized for **long-term use** but colorful and cooool.
 
+## Big update
+There is a big update for the color scheme since version 3.0.0. If you are **old users** and don't like the new style, please find the archive [here](https://github.com/yeebc/jupyterlab-neon-theme/tree/archive_version2.x). However, unfortunately it would not be maintained anymore.
 
 ## Bonuses
-1. Search tool + neon billboard
-2. Collapser + neon light
-3. Scrollbar + FM-84's "Atlas"  (compatible with webKit browsers)
-4. A surprise in the presentation mode (**Top menu** --> **View** --> **Presention mode**)
+**1. Search tool * Neon billboard**
+<img src="https://raw.githubusercontent.com/yeebc/jupyterlab-neon-theme/master/screenshots/Billboard.png" />
+
+**2. Collapser * Neon light**
+<img src="https://raw.githubusercontent.com/yeebc/jupyterlab-neon-theme/master/screenshots/Collapser.png" />
+
+**3. Scrollbar * FM-84's "Atlas"  (only compatible with webKit browsers)**
+<img src="https://raw.githubusercontent.com/yeebc/jupyterlab-neon-theme/master/screenshots/Scrollbar.png" />
+
+**4. Presentation mode (**Top menu** --> **View** --> **Presention mode**)**
+<img src="https://raw.githubusercontent.com/yeebc/jupyterlab-neon-theme/master/screenshots/Presentation.png" />
 
 
 ## Customize
@@ -39,8 +52,17 @@ To support gradient scrollbars showed in screenshots, **webKit browsers** like c
 ## Prerequisites
 * JupyterLab >= 2.0.0
 
+This theme is an extension of Jupyterlab. In order to install JupyterLab extensions, you need to have Node.js installed and enable the **Extension Manager** which is disabled by default. More information can be found in the [Official User Guide](https://jupyterlab.readthedocs.io/en/stable/user/extensions.html).
+```bash
+conda install -c conda-forge nodejs
+```
 
 ## Package installation
+* Using GUI
+
+You can use the extension manager to find and install this theme for JupyterLab. Please check [Official User Guide](https://jupyterlab.readthedocs.io/en/stable/user/extensions.html#finding-extensions) for detailed instructions.
+
+* Using the command
 ```bash
 jupyter labextension install @yeebc/jupyterlab_neon_theme
 ```
@@ -68,3 +90,5 @@ I welcome any contribution to this theme. You can get more imfomation about the 
 
 ## Thanks
 You may also like  [SynthWave '84](https://github.com/robb0wen/synthwave-vscode), my favorite VS Code theme,  with similar style and  it is more compatible with HTML & CSS, JS.
+
+And [Welcome to 1984](https://github.com/juanmnl/vs-1984).

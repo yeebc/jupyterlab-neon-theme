@@ -1,7 +1,7 @@
 {
   "name": "@yeebc/jupyterlab_neon_theme",
-  "version": "1.0.5",
-  "description": "A flat, 80's neon inspired theme for JupyterLab 2.0. ",
+  "version": "3.0.1",
+  "description": "A flat, 80's neon inspired theme for JupyterLab 2.x. ",
   "author": "Baicai Ye <yebaicai@foxmail.com>",
   "keywords": [
     "jupyter",
