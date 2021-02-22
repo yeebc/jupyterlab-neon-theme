@@ -1,7 +1,7 @@
 {
   "name": "@yeebc/jupyterlab_neon_theme",
   "version": "3.0.1",
-  "description": "A flat, 80's neon inspired theme for JupyterLab 2.x. ",
+  "description": "A flat, 80's neon inspired theme for JupyterLab 3.x.",
   "author": "Baicai Ye <yebaicai@foxmail.com>",
   "keywords": [
     "jupyter",
@@ -16,9 +16,11 @@
     "lib/*.d.ts",
     "lib/*.js.map",
     "lib/*.js",
-    "style/*"
+    "style/**/*"
   ],
-  "sideEffects": true,
+  "sideEffects": [
+    "style/*.css"
+  ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "style": "style/index.css",
@@ -26,26 +28,40 @@
     "lib": "lib/"
   },
   "scripts": {
-    "build": "tsc -b",
-    "clean": "rimraf lib",
-    "prepublishOnly": "npm run build",
-    "watch": "tsc -b --watch"
+    "build": "jlpm run build:lib && jlpm run build:labextension:dev",
+    "build:prod": "jlpm run build:lib && jlpm run build:labextension",
+    "build:labextension": "jupyter labextension build .",
+    "build:labextension:dev": "jupyter labextension build --development True .",
+    "build:lib": "tsc",
+    "clean": "jlpm run clean:lib",
+    "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
+    "clean:labextension": "rimraf jupyterlab_theme_winter/labextension",
+    "clean:all": "jlpm run clean:lib && jlpm run clean:labextension",
+    "eslint": "eslint . --ext .ts,.tsx --fix",
+    "eslint:check": "eslint . --ext .ts,.tsx",
+    "install:extension": "jupyter labextension develop --overwrite .",
+    "prepare": "jlpm run clean && jlpm run build:prod",
+    "watch": "run-p watch:src watch:labextension",
+    "watch:src": "tsc -w",
+    "watch:labextension": "jupyter labextension watch ."
   },
   "dependencies": {
-    "@jupyterlab/application": "^2.0.0",
-    "@jupyterlab/apputils": "^2.0.0"
+    "@jupyterlab/application": "^3.0.0"
   },
   "devDependencies": {
+    "@jupyterlab/builder": "^3.0.0",
+    "base64-inline-loader": "^1.1.1",
     "rimraf": "~3.0.0",
-    "typedoc": "^0.15.4",
-    "typescript": "~3.7.3"
+    "typedoc": "~0.20.0",
+    "typescript": "~4.1.0"
   },
   "publishConfig": {
     "access": "public"
   },
   "jupyterlab": {
     "extension": true,
-    "themePath": "style/index.css"
+    "themePath": "style/index.css",
+    "outputDir": "jupyterlab_neon_theme/labextension"
   },
   "homepage": "https://github.com/yeebc/jupyterlab-neon-theme",
   "bugs": {
