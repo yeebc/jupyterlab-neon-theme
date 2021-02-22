@@ -49,3 +49,6 @@ lerna-debug.log
 yarn-error.log
 
 junit.xml
+
+**/tsconfig.tsbuildinfo
+**/labextension/
