@@ -33,7 +33,7 @@
 
 /* or use an image as the background */
 /* .jp-LabShell {
-  background: url('images/background.jpg') center/cover no-repeat;
+  background: url('./images/background.jpg') center/cover no-repeat;
 }
 
 .lm-DockPanel-tabBar .lm-TabBar-tab.jp-mod-current:before {

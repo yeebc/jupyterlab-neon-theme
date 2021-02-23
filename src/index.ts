@@ -1,3 +1,4 @@
+
 import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin
@@ -6,14 +7,15 @@ import {
 import { IThemeManager } from '@jupyterlab/apputils';
 
 /**
- * A flat, 80's neon inspired theme for JupyterLab.
+ * Initialization data for the @datalayer-jupyter/jupyterlab-theme-winter extension.
  */
-const plugin: JupyterFrontEndPlugin<void> = {
+const extension: JupyterFrontEndPlugin<void> = {
   id: '@yeebc/jupyterlab_neon_theme:plugin',
   requires: [IThemeManager],
+  autoStart: true,
   activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
+    console.log('JupyterLab extension @datalayer-jupyter/jupyterlab-theme-winter is activated!');
     const style = '@yeebc/jupyterlab_neon_theme/index.css';
-
     manager.register({
       name: 'JupyterLab Neon Night',
       isLight: false,
@@ -21,8 +23,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
       load: () => manager.loadCSS(style),
       unload: () => Promise.resolve(undefined)
     });
-  },
-  autoStart: true
+  }
 };
 
-export default plugin;
+export default extension;
