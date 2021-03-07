@@ -46,11 +46,11 @@
     "watch:labextension": "jupyter labextension watch ."
   },
   "dependencies": {
-    "@jupyterlab/application": "^3.0.0"
+    "@jupyterlab/application": "^3.0.0",
+    "base64-inline-loader": "^1.1.1"
   },
   "devDependencies": {
     "@jupyterlab/builder": "^3.0.0",
-    "base64-inline-loader": "^1.1.1",
     "rimraf": "~3.0.0",
     "typedoc": "~0.20.0",
     "typescript": "~4.1.0"

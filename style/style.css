@@ -221,6 +221,10 @@ span.cm-keyword:hover {
   border-bottom: 1px solid #000;
 }
 
+#jp-menu-panel {
+  background: none;
+}
+
 .jp-SideBar .lm-TabBar-tab:not(.lm-mod-current) .jp-icon3[fill] {
   fill: var(--jp-inverse-layout-color4);
 }
@@ -288,7 +292,7 @@ span.cm-keyword:hover {
 
 
 .lm-DockPanel-tabBar .lm-TabBar-tab:hover:not(.lm-mod-current), 
-.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current {
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current, h1 {
   color: #ffeef6;
   text-shadow: 0 0 2px #b33576, 0 0 6px #6b2e4e, 0 0 6px #6b2e4e, 2px 2px 1px #000;
   opacity: 1;
@@ -369,12 +373,12 @@ span.cm-keyword:hover {
 
 .jp-RenderedText pre .ansi-yellow-fg, 
 .jp-RenderedText pre .ansi-yellow-bg {
-  color: var(--neon-night-purple0);
+  color: var(--neon-night-orange);
 }
 
 .jp-RenderedText pre .ansi-yellow-intense-fg, 
 .jp-RenderedText pre .ansi-yellow-intense-bg {
-  color: var(--neon-night-orange);
+  color: var(--neon-night-pink);
 }
 
 .jp-RenderedText pre .ansi-cyan-fg, 
@@ -389,12 +393,12 @@ span.cm-keyword:hover {
 
 .jp-RenderedText pre .ansi-magenta-fg, 
 .jp-RenderedText pre .ansi-magenta-fg {
-  color: var(--neon-night-pink);
+  color: var(--neon-night-peach);
 }
 
 .jp-RenderedText pre .ansi-magenta-intense-fg, 
 .jp-RenderedText pre .ansi-magenta-intense-bg {
-  color: var(--neon-night-peach);
+  color: var(--neon-night-purple0);
 }
 
 .jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon:before {

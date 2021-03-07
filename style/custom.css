@@ -1,7 +1,8 @@
 /* Custom*/
 
 /* Left and top tool bar*/
-.jp-SideBar.p-TabBar, #jp-top-panel {
+.jp-SideBar.p-TabBar, #jp-top-panel,
+.jp-LabShell[data-shell-mode='single-document'] #jp-menu-panel {
   background-color: rgba(34, 33, 54, 0.65);  /* last value is the transparency */
 }
 
@@ -52,7 +53,7 @@
 }
 
 /* Opened files tab bar */
-.lm-DockPanel-tabBar .lm-TabBar-tab {
+.lm-DockPanel-tabBar .lm-TabBar-tab, h1 {
   font-family: 'Neon Bugler';
   font-size: 14px;
 }
